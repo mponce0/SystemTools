@@ -54,7 +54,7 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 |	`Ndd`		| deletes *N* lines	|
 |	`gq`		| wraps current line around 80 characters long	|
 | **Search and Substitution** |
-|	`/PATTERN` 	| search for pattern in the file	|
+|	`/PATTERN` 	| search for first appearance of pattern from the current position onwards	|
 |	`:%s/TARGET/CHANGE/` | search TARGET and substitute for CHANGE in next appearance of TARGET	|
 |	`:%s/TARGET/CHANGE/g` | search TARGET and substitute for CHANGE globally	|
 | `:[LOC]s/OLD/NEW/` | general case for search and replace |
