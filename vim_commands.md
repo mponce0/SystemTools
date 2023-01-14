@@ -1,6 +1,6 @@
-# vi list of shortcuts
+# `vi`
 
-## modes
+## Modes
 `vi` has a couple main modes of working (insert and command) and a few variations around them.
 
 | to enter insert/edit-mode | press `i` |
@@ -10,7 +10,7 @@
 | to exit insert mode		|	press `ESC` key |
 
 
-## some basic commands
+## Basic commands
 	:w __ write/save.
 	:q __ quit.
 	:w <filename.ext> __ saves file as "filename.ext"
@@ -35,12 +35,12 @@
 
 	.  _ repeats last command
 
-## misc.
+## Misc.
 	ga __ shows ascii/hex/octal values of the corresponding character	
 
 
 
-## Interesting Readings:
+## Interesting Readings and Futher Resources:
 
 	* https://www.redhat.com/sysadmin/introduction-vi-editor
 	* https://www.redhat.com/sysadmin/vim-power-commands
