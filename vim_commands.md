@@ -18,6 +18,8 @@
 	`:w <filename.ext>` __ saves file as "filename.ext"
 	`:q!` __ quits without saving the changes to the file
 
+	`0`  __ goes to the beggining of the current line
+	`$`  __ goes to the end of the current line
 	`:$` __ goes to end of the file
 	`:1` __ goes to line #1
 	`:N` __ goes to line #N
@@ -39,6 +41,7 @@
 	`:%s/TARGET/CHANGE/` __ search TARGET and substitute for CHANGE globally
 
 	`.`  _ repeats last command
+
 
 ## Misc.
 	`ga` __ shows ascii/hex/octal values of the corresponding character	
