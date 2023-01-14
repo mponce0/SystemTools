@@ -24,37 +24,37 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 |	`:q`		| quits/exists	|
 |	`:w <filename.ext>` | saves file as "filename.ext"	|
 |	`:q!`		| quits without saving the changes to the file	|
-| **Movement**	|
+| **Movement**		|
 |	`0`  		| goes to the beggining of the current line	|
 |	`$`  		| goes to the end of the current line	|
 |	`:$` 		| goes to end of the file	|
 |	`:1` 		| goes to line #1	|
 |	`:N` 		| goes to line #N	|
-|	`$`  	| goes to the end of the current line	|
+|	`$`  		| goes to the end of the current line	|
 |	`w`		| goes to next word	|
 |	`b`		| goes to the beggining of the word	|
 |	`e`		| goes to the end of the word	|
-| **Edition**	|
-|	`x` 	| deletes the current character	|
-|	`dw` 	| deletes all the text until the next word	|
-|	`dNw`	|	deletes *N* words	|
-|	`db`	| deletes the previous word	|
-|	`d)`	| deletes until the end of the sentence	|
-|	`d$`	| deletes all the text until the end of the line	|
+| **Edition**		|
+|	`x` 		| deletes the current character	|
+|	`dw` 		| deletes all the text until the next word	|
+|	`dNw`		|	deletes *N* words	|
+|	`db`		| deletes the previous word	|
+|	`d)`		| deletes until the end of the sentence	|
+|	`d$`		| deletes all the text until the end of the line	|
 |	`dd` --or-- `D`	| deletes the whole line	|
-|	`Ndd`	| deletes *N* lines	|
-|	`gq`	| wrap lines around 80 characters long	|
+|	`Ndd`		| deletes *N* lines	|
+|	`gq`		| wrap lines around 80 characters long	|
 | **Search and Replacement** |
-|	`/PATTERN` | search for pattern in the file	|
+|	`/PATTERN` 	| search for pattern in the file	|
 |	`:%s/TARGET/CHANGE/` | search TARGET and substitute for CHANGE in next appearance of TARGET	|
 |	`:%s/TARGET/CHANGE/g` | search TARGET and substitute for CHANGE globally	|
 | ** Configuration & Parameters** |
-| `:set number` | displays line numbers  |
-| `:set nonumber` | removes line numbers  |
-| `:set all`  | shows all available parameters  |
+| `:set number` 	| displays line numbers  |
+| `:set nonumber` 	| removes line numbers  |
+| `:set all`  		| shows all available parameters  |
 | **Miscellaneous** 	|
-|	`.`	| repeats last command	|
-|	`ga`	| shows ascii/hex/octal values of the corresponding character		|
+|	`.`		| repeats last command	|
+|	`ga`		| shows ascii/hex/octal values of the corresponding character		|
 |	`:!<cmd>`	|	executes the <*cmd*> command from the shell	|
 
 
