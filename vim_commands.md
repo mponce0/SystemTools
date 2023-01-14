@@ -14,6 +14,8 @@
 ## Basic commands
 While being in command-mode, the following combination of key-strokes will generate the corresponding action.
 
+The commands beggining with `:` needs to be finalized with hitting "Enter".
+
 
 | keys combination	|	command/action			|
 |---------------|-------------------|
