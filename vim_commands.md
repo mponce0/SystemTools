@@ -69,6 +69,10 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 |	`:!<cmd>`	| executes the <*cmd*> command from the shell	|
 
 
+## Advanced
+`vi` has a large set of contributed *plugins* which allows
+for a high cutomizable experience.
+
 
 ## Interesting Readings and Futher Resources:
 
