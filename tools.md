@@ -1,6 +1,7 @@
 | Tool   | Description       |
 ---------|---------------------
-| `htop` | process manager   |
+| `htop` | process and resources manager   |
+| `pstree` | process manager |
 | `tmux` | terminal multiplexer |
 | `tree` | display file tree structure |
 ------------------------------
