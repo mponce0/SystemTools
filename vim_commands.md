@@ -52,11 +52,18 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 |	`d$`		| deletes all the text until the end of the line	|
 |	`dd` --or-- `D`	| deletes the whole line	|
 |	`Ndd`		| deletes *N* lines	|
-|	`gq`		| wrap lines around 80 characters long	|
-| **Search and Replacement** |
+|	`gq`		| wraps current line around 80 characters long	|
+| **Search and Substitution** |
 |	`/PATTERN` 	| search for pattern in the file	|
 |	`:%s/TARGET/CHANGE/` | search TARGET and substitute for CHANGE in next appearance of TARGET	|
 |	`:%s/TARGET/CHANGE/g` | search TARGET and substitute for CHANGE globally	|
+| `:[LOC]s/OLD/NEW/` | general case for search and replace |
+| `:.s/OLD/NEW/` | replace OLD with NEW in current line  |
+| `:Ns/OLD/NEW/` | replace OLD with NEW in line #*N*  |
+| `:.+Ms/OLD/NEW/` | replace OLD with NEW from current line plus *M* more  |
+| `:$s/OLD/NEW/` | replace OLD with NEW in last line  |
+| `:%s/OLD/NEW/` | replace OLD with NEW in entire file  |
+| `:[line1],[line2]s/OLD/NEW/` | replace OLD with NEW between lines *line1* and *line2*  |
 | **Configuration & Parameters** |
 | `:set number` 	| displays line numbers			|
 | `:set nonumber` 	| removes line numbers			|
