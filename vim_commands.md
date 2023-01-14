@@ -3,6 +3,8 @@
 ## Modes
 `vi` has a couple main modes of working (insert and command) and a few variations around them.
 
+|	mode					|	action	|
+|---------------------------|-----------|
 | to enter insert/edit-mode | press `i` |
 | to define a code-block/visual-mode | press `CTRL-V` |
 | to enter command-mode		|	press `:`		|
@@ -10,32 +12,36 @@
 
 
 ## Basic commands
-	:w __ write/save.
-	:q __ quit.
-	:w <filename.ext> __ saves file as "filename.ext"
-	:q! __ quits without saving the changes to the file
 
-	:$ __ goes to end of the file
-	:1 __ goes to line #1
-	:N __ goes to line #N
-	$  __ goes to the end of the current line
-	w  __ goes to next word
-	b  __ goes to the beggining of the word
-	e __ goes to the end of the word
+	`:w` __ write/save current file
+	`:q` __ quits/exists
+	`:w <filename.ext>` __ saves file as "filename.ext"
+	`:q!` __ quits without saving the changes to the file
 
-	x _ deletes the current character
-	dw __ deletes all the text until the next word
-	d$ __ deletes all the text until the end of the line
-	dd __ deletes a whole line
-	Ndd __ deletes N lines
+	`:$` __ goes to end of the file
+	`:1` __ goes to line #1
+	`:N` __ goes to line #N
+	`$`  __ goes to the end of the current line
+	`w`  __ goes to next word
+	`b`  __ goes to the beggining of the word
+	`e` __ goes to the end of the word
 
-	gq __ wrap lines around 80 characters long
+	`x` _ deletes the current character
+	`dw` __ deletes all the text until the next word
+	`d$` __ deletes all the text until the end of the line
+	`dd` __ deletes a whole line
+	`Ndd` __ deletes N lines
 
+	`gq` __ wrap lines around 80 characters long
 
-	.  _ repeats last command
+	`/PATTERN` __ search for pattern in the file
+	`:%s/TARGET/CHANGE/` __ search TARGET and substitute for CHANGE in next appearance of TARGET
+	`:%s/TARGET/CHANGE/` __ search TARGET and substitute for CHANGE globally
+
+	`.`  _ repeats last command
 
 ## Misc.
-	ga __ shows ascii/hex/octal values of the corresponding character	
+	`ga` __ shows ascii/hex/octal values of the corresponding character	
 
 
 
