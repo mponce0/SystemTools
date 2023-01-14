@@ -58,13 +58,15 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 |	`:%s/TARGET/CHANGE/` | search TARGET and substitute for CHANGE in next appearance of TARGET	|
 |	`:%s/TARGET/CHANGE/g` | search TARGET and substitute for CHANGE globally	|
 | **Configuration & Parameters** |
-| `:set number` 	| displays line numbers  |
-| `:set nonumber` 	| removes line numbers  |
-| `:set all`  		| shows all available parameters  |
+| `:set number` 	| displays line numbers			|
+| `:set nonumber` 	| removes line numbers			|
+| `:set paste`		| activates "paste" mode		|
+| `:set syntax`		| enables syntax highlighting		|
+| `:set all`  		| shows all available parameters	|
 | **Miscellaneous** 	|
 |	`.`		| repeats last command	|
 |	`ga`		| shows ascii/hex/octal values of the corresponding character		|
-|	`:!<cmd>`	|	executes the <*cmd*> command from the shell	|
+|	`:!<cmd>`	| executes the <*cmd*> command from the shell	|
 
 
 
