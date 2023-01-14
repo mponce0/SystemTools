@@ -1,5 +1,14 @@
 # `vi`
 
+`vi` or `vim` is a powerful, terminal-based editor.
+Widely used among programmers, sys.admins and power-users, offers
+the ability of realzing complex tasks all based on keyboard interations.
+
+For begginners it may offer a bit of a step learning curve.
+We compile here some of the most useful commands and some
+worst-reading references at the bottom of this document.
+
+
 ## Modes
 `vi` has a couple main modes of working (insert and command) and a few variations around them.
 
