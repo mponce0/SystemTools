@@ -38,7 +38,7 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 |	`$`  		| goes to the end of the current line	|
 |	`:$` 		| goes to end of the file	|
 |	`:1` 		| goes to line #1	|
-|	`:N` 		| goes to line #N	|
+|	`:N` 		| goes to line #*N*	|
 |	`$`  		| goes to the end of the current line	|
 |	`w`		| goes to next word	|
 |	`b`		| goes to the beggining of the word	|
