@@ -1,11 +1,14 @@
-
 # vi list of shortcuts
 
 ## modes
-	- insert/edit (press i)
-	- visual (CTRL-V)
-	- commands (press :)
-	- exit insert mode, press ESC key
+`vi` has a couple main modes of working (insert and command) and a few variations around them.
+
+| to enter insert/edit-mode | press `i` |
+|---------------------------|-----------|
+| to define a code-block/visual-mode | press `CTRL-V` |
+| to enter command-mode		|	press `:`		|
+| to exit insert mode		|	press `ESC` key |
+
 
 ## some basic commands
 	:w __ write/save.
