@@ -12,9 +12,12 @@
 
 
 ## Basic commands
-File Manipulation
-| command		|	action			|
+While being in command-mode, the following combination of key-strokes will generate the corresponding action.
+
+
+| keys combination	|	command/action			|
 |---------------|-------------------|
+| **File Manipulation**	|
 |	`:w`		| write/save current file	|
 |	`:q`		| quits/exists	|
 |	`:w <filename.ext>` | saves file as "filename.ext"	|
