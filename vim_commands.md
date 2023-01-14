@@ -57,10 +57,10 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 
 ## Interesting Readings and Futher Resources:
 
-	* https://www.redhat.com/sysadmin/introduction-vi-editor
-	* https://www.redhat.com/sysadmin/vim-power-commands
-	* https://www.redhat.com/sysadmin/3-text-editors-compared
-	* https://www.redhat.com/sysadmin/use-vim-macros
-	* https://www.redhat.com/sysadmin/five-vim-plugins
+  * https://www.redhat.com/sysadmin/introduction-vi-editor
+  * https://www.redhat.com/sysadmin/vim-power-commands
+  * https://www.redhat.com/sysadmin/3-text-editors-compared
+  * https://www.redhat.com/sysadmin/use-vim-macros
+  * https://www.redhat.com/sysadmin/five-vim-plugins
 
 ---
