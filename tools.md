@@ -4,4 +4,5 @@
 | `pstree` | process manager |
 | `tmux` | terminal multiplexer |
 | `tree` | display file tree structure |
+| `strace` | ... |
 ------------------------------
