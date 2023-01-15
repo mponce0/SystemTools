@@ -109,12 +109,12 @@ for a high cutomizable experience.
 ### Visual Mode
   - remove characters vertically, e.g. remove comments given by multiples lines of `#`s or `//`s.
      - enter in visual mode by pressing `CTRL-V`
-     - select the column of characters to remove
+     - select the column of characters to remove using the cursor keys
      - press `x`
 
   - add comments in multiple lines
     - enter in visual mode by pressing `CTRL-V`
-    - select the lines to commment, move up/down with arrow keys
+    - select the lines to comment, move up/down with arrow keys
     - press `Shift+I`
     - insert the text you want, e.g. `%` or `//` or `#`
     - press `Esc` `Esc`
