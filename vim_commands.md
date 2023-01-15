@@ -78,8 +78,13 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 
 
 ## Advanced Features
-`vi` has a large set of contributed *plugins* which allows
-for a high cutomizable experience.
+### Configuration
+All the seteable parameters of `vi` can be set in a configuration file,
+usually located in the user's homedir named `.vimrc`.
+
+### Plugins
+`vi` has a large set of contributed *plugins* which allows for a highly cutomizable experience.
+
 
 
 ## Examples
