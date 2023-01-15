@@ -65,8 +65,8 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 | `:%s/OLD/NEW/` | replace OLD with NEW in entire file  |
 | `:[line1],[line2]s/OLD/NEW/` | replace OLD with NEW between lines *line1* and *line2*  |
 | **Configuration & Parameters** |
-| `:set number` 	| displays line numbers			|
-| `:set nonumber` 	| removes line numbers			|
+| `:set number` / `:set nonumber` 	| displays/removes line numbers			|
+| `:set list` / `:set nolist`	| displays/hides special characters			|
 | `:set paste`		| activates "paste" mode		|
 | `:set syntax`		| enables syntax highlighting		|
 | `:set all`  		| shows all available parameters	|
@@ -80,6 +80,46 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 ## Advanced Features
 `vi` has a large set of contributed *plugins* which allows
 for a high cutomizable experience.
+
+
+## Examples
+### Search and Replace
+   - replace only the first occurrence of "oldTEXT" with "NewText" in each of the following 11 lines starting with the current line (`.`) and continuing for the 10 that follow (`.+10`)
+
+     `:.,.+10s/oldTEXT/NewText`
+
+   - replace every occurrence (caused by the `g` at the end of the command) of "oldTEXT" with "NewText"
+   
+     `:%s/oldTEXT/NewText/g`
+
+   -  remove the last character from every line in the file. Use it if every line in the file ends with ^M as the result of a file transfer. Execute it when the cursor is on the first line of the file
+
+      `:%s/.$//`
+
+   - remove ^M can be also achieve more precisely by searching for the "^M^ sequence, however it ^M should be written as the combination of CTRL-V and CTRL-M, i.e. pressing `CTRL-V-M`
+
+       `:%s/^M//g`
+
+
+  - comment out all the lines in a file using `#`
+
+     `:%s/^/#/`
+
+
+### Visual Mode
+  - remove characters vertically, e.g. remove comments given by multiples lines of `#`s or `//`s.
+     - enter in visual mode by pressing `CTRL-V`
+     - select the column of characters to remove using the cursor keys
+     - press `x`
+
+  - add comments in multiple lines
+    - enter in visual mode by pressing `CTRL-V`
+    - select the lines to comment, move up/down with arrow keys
+    - press `Shift+I`
+    - insert the text you want, e.g. `%` or `//` or `#`
+    - press `Esc` `Esc`
+
+
 
 
 
