@@ -82,6 +82,22 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 for a high cutomizable experience.
 
 
+## Examples
+### Search and Replace
+   - replace only the first occurrence of "oldTEXT" with "NewText" in each of the following 11 lines starting with the current line (`.`) and continuing for the 10 that follow (`.+10`)
+
+     `:.,.+10s/oldTEXT/NewText`
+
+   - replace every occurrence (caused by the `g` at the end of the command) of "oldTEXT" with "NewText"
+   
+     `:%s/oldTEXT/NewText/g`
+
+   -  remove the last character from every line in the file. Use it if every line in the file ends with ^M as the result of a file transfer. Execute it when the cursor is on the first line of the file
+
+      `:%s/.$//`
+
+### Visual Mode
+
 
 ## Interesting Readings and Futher Resources:
 
