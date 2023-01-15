@@ -65,8 +65,8 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 | `:%s/OLD/NEW/` | replace OLD with NEW in entire file  |
 | `:[line1],[line2]s/OLD/NEW/` | replace OLD with NEW between lines *line1* and *line2*  |
 | **Configuration & Parameters** |
-| `:set number` 	| displays line numbers			|
-| `:set nonumber` 	| removes line numbers			|
+| `:set number` / `:set nonumber` 	| displays/removes line numbers			|
+| `:set list` / `:set nolist`	| displays/hides special characters			|
 | `:set paste`		| activates "paste" mode		|
 | `:set syntax`		| enables syntax highlighting		|
 | `:set all`  		| shows all available parameters	|
@@ -96,7 +96,29 @@ for a high cutomizable experience.
 
       `:%s/.$//`
 
+   - remove ^M can be also achieve more precisely by searching for the "^M^ sequence, however it ^M should be written as the combination of CTRL-V and CTRL-M, i.e. pressing `CTRL-V-M`
+
+       `:%s/^M//g`
+
+
 ### Visual Mode
+  - remove characters vertically, e.g. remove comments given by multiples lines of `#`s or `//`s.
+     - enter in visual mode by pressing `CTRL-V`
+     - select the column of characters to remove
+     - press `x`
+
+  - add comments in multiple lines
+    - enter in visual mode by pressing `CTRL-V`
+    - select the lines to commment, move up/down with arrow keys
+    - press `Shift+I`
+    - insert the text you want, e.g. `%` or `//` or `#`
+    - press `Esc` `Esc`
+
+
+  - comment out all lines in a file
+
+     `:%s/^/#/`
+
 
 
 ## Interesting Readings and Futher Resources:
