@@ -101,6 +101,11 @@ for a high cutomizable experience.
        `:%s/^M//g`
 
 
+  - comment out all the lines in a file using `#`
+
+     `:%s/^/#/`
+
+
 ### Visual Mode
   - remove characters vertically, e.g. remove comments given by multiples lines of `#`s or `//`s.
      - enter in visual mode by pressing `CTRL-V`
@@ -115,9 +120,6 @@ for a high cutomizable experience.
     - press `Esc` `Esc`
 
 
-  - comment out all lines in a file
-
-     `:%s/^/#/`
 
 
 
