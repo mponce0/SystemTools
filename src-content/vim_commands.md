@@ -30,8 +30,9 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 |---------------|-------------------|
 | **File Manipulation**	|
 |	`:w`		| write/save current file	|
-|	`:q`		| quits/exists	|
 |	`:w <filename.ext>` | saves file as "filename.ext"	|
+|	`:q`		| quits/exists	|
+| `:wq` / `ZZ` / `:x`  | saves changes to current file and exists  |
 |	`:q!`		| quits without saving the changes to the file	|
 | **Movement**		|
 |	`0`  		| goes to the beggining of the current line	|
@@ -64,6 +65,10 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 | `:$s/OLD/NEW/` | replace OLD with NEW in last line  |
 | `:%s/OLD/NEW/` | replace OLD with NEW in entire file  |
 | `:[line1],[line2]s/OLD/NEW/` | replace OLD with NEW between lines *line1* and *line2*  |
+| **Visual Mode** |
+| `v` | enters visual mode and start to highlight characters  |
+| `V` | enters visual mode and start to highlight lines  |
+| `ESC` | exits visual mode |
 | **Configuration & Parameters** |
 | `:set number` / `:set nonumber` 	| displays/removes line numbers			|
 | `:set list` / `:set nolist`	| displays/hides special characters			|
@@ -71,6 +76,7 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 | `:set syntax`		| enables syntax highlighting		|
 | `:set all`  		| shows all available parameters	|
 | **Miscellaneous** 	|
+| `~`   | toggles uppercase <-> lowercase   |
 |	`.`		| repeats last command	|
 |	`ga`		| shows ascii/hex/octal values of the corresponding character		|
 |	`:!<cmd>`	| executes the <*cmd*> command from the shell	|
