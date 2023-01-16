@@ -96,6 +96,8 @@ usually located in the user's homedir named `.vimrc`.
 
 ### Plugins
 `vi` has a large set of contributed *plugins* which allows for a highly cutomizable experience.
+Plugins will be installed in a `.vim` sub-directory within the user's home-dir.
+Installation is usually done via a "package manager" and there are a few different ones.
 
 Personally, I don't use a lot of plugins, but here are some of the ones I'm currently using:
 [NERDTree](https://github.com/preservim/nerdtree),
@@ -115,11 +117,11 @@ See more plugins at, https://vimawesome.com
    
      `:%s/oldTEXT/NewText/g`
 
-   -  remove the last character from every line in the file. Use it if every line in the file ends with ^M as the result of a file transfer. Execute it when the cursor is on the first line of the file
+   -  remove the last character from every line in the file. Use it if every line in the file ends with ^M as the result of a file being transferred among different OSes. Execute it when the cursor is on the first line of the file
 
       `:%s/.$//`
 
-   - remove ^M can be also achieve more precisely by searching for the "^M^ sequence, however it ^M should be written as the combination of CTRL-V and CTRL-M, i.e. pressing `CTRL-V-M`
+   - remove ^M can be also achieve more precisely by searching for the "^M" sequence, however it ^M should be written as the combination of `CTRL-V` __and__ `CTRL-M`, i.e. pressing `CTRL-V-M` simulatenously
 
        `:%s/^M//g`
 
