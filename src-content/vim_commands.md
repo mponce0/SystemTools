@@ -129,11 +129,15 @@ usually located in the user's homedir named `.vimrc`.
 
 
 ## Interesting Readings and Futher Resources:
-
+### Articles:
   * https://www.redhat.com/sysadmin/introduction-vi-editor
   * https://www.redhat.com/sysadmin/vim-power-commands
   * https://www.redhat.com/sysadmin/3-text-editors-compared
   * https://www.redhat.com/sysadmin/use-vim-macros
   * https://www.redhat.com/sysadmin/five-vim-plugins
 
+### Cheat sheets and QuickRefs:
+  * http://www.linux-admins.net/2011/01/vi-cheat-sheet.html
+  * https://ss64.com/vi.html
+   
 ---
