@@ -98,7 +98,9 @@ usually located in the user's homedir named `.vimrc`.
 `vi` has a large set of contributed *plugins* which allows for a highly cutomizable experience.
 
 Personally, I don't use a lot of plugins, but here are some of the ones I'm currently using:
-NERDTree, airliner, gitgutter.
+[NERDTree](https://github.com/preservim/nerdtree),
+[airliner](https://github.com/vim-airline/),
+[gitgutter](https://github.com/airblade/vim-gitgutter).
 
 See more plugins at, https://vimawesome.com
 
