@@ -156,8 +156,14 @@ See more plugins at, https://vimawesome.com
   * https://www.redhat.com/sysadmin/use-vim-macros
   * https://www.redhat.com/sysadmin/five-vim-plugins
 
+
 ### Cheat sheets and QuickRefs:
   * http://www.linux-admins.net/2011/01/vi-cheat-sheet.html
   * https://ss64.com/vi.html
-   
+
+#### Visual cheat sheets
+  * https://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.pdf
+  * 
+
+
 ---
