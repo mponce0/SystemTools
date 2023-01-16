@@ -45,6 +45,12 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 |	`b`		| goes to the beggining of the word	|
 |	`e`		| goes to the end of the word	|
 | **Edition**		|
+|	`i` 		| inserts before cursor |
+|	`I` 		| inserts before line |
+|	`a` 		| appends after cursor  |
+|	`A` 		| appends after line  |
+|	`o` 		| opens blank line below the cursor |
+|	`O` 		| opens blank line above the cursor |
 |	`x` 		| deletes the current character	|
 |	`dw` 		| deletes all the text until the next word	|
 |	`dNw`		|	deletes *N* words	|
@@ -91,6 +97,10 @@ usually located in the user's homedir named `.vimrc`.
 ### Plugins
 `vi` has a large set of contributed *plugins* which allows for a highly cutomizable experience.
 
+Personally, I don't use a lot of plugins, but here are some of the ones I'm currently using:
+NERDTree, airliner, gitgutter.
+
+See more plugins at, https://vimawesome.com
 
 
 ## Examples
