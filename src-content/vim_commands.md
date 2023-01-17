@@ -81,6 +81,8 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 | `:set autoindent`		| activates auto-indent   |
 | `:set smartindent`		| activates smart-indent contextualized with the code |
 | `:set tabstop=x`    | sets *x* spaces to be used as <tab>   |
+| `:set showmatch`    | highlights matching opening-closing parenthesis when cursor passes over   |
+| `:set hlsearch` | highlights matches in a search   |
 | `:set paste`		| activates "paste" mode, e.g. deactivates autoindent		|
 | `:set ignorecase` / `:set ic` | ignores case-sentive in searches  |
 | `:set syntax`		| enables syntax highlighting		|
