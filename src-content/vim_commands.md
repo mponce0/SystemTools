@@ -78,7 +78,11 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 | **Configuration & Parameters** |
 | `:set number` / `:set nonumber` 	| displays/removes line numbers			|
 | `:set list` / `:set nolist`	| displays/hides special characters			|
-| `:set paste`		| activates "paste" mode		|
+| `:set autoindent`		| activates auto-indent   |
+| `:set smartindent`		| activates smart-indent contextualized with the code |
+| `:set tabstop=4`    | sets spaces to be used as <tab>   |
+| `:set paste`		| activates "paste" mode, e.g. deactivates autoindent		|
+| `:set ignorecase` / `:set ic` | ignores case-sentive in searches  |
 | `:set syntax`		| enables syntax highlighting		|
 | `:set all`  		| shows all available parameters	|
 | **Miscellaneous** 	|
@@ -163,6 +167,7 @@ See more plugins at, https://vimawesome.com
 
 #### Visual cheat sheets
   * https://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.pdf
+  * https://victorhck.gitlab.io/comandos_vim/
   * 
 
 
