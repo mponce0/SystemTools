@@ -6,5 +6,6 @@
 | `tree` | display file tree structure |
 | `strace` | ... |
 | `gdb`  | debugger |
-| `grpof` | profiler |
+| `gprof` | profiler |
+| `valgrind` | memory profiler |
 ------------------------------
