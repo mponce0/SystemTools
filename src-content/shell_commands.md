@@ -5,26 +5,34 @@ More importantly it sits directly as an interface between the user, APIs,
 etc. and the *kernell* of the OS.
 
 # Commands
-``sh
+```sh
 pwd
 cd
 mkdir
+rmdir
 
 ls
+cp
+mv
+rm
 
 chmod
 
 echo
 
 cat
+more
+less
+
 hexdump
+od
 
 man
 
 vi
-``
-
 ```
+
+```sh
 .
 ..
 /
