@@ -168,6 +168,8 @@ See more plugins at, https://vimawesome.com
 #### Visual cheat sheets
   * https://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.pdf
   * https://victorhck.gitlab.io/comandos_vim/
+  * https://hamwaves.com/vim.tutorial/doc/vim.cheat_sheet_tutorial.pdf
+  * https://osslab.tw/uploads/images/gallery/2022-10/vim-cheatsheet.png
   * 
 
 
