@@ -5,6 +5,31 @@ More importantly it sits directly as an interface between the user, APIs,
 etc. and the *kernell* of the OS.
 
 # Commands
+``sh
+pwd
+cd
+mkdir
+
+ls
+
+chmod
+
+echo
+
+cat
+hexdump
+
+man
+
+vi
+``
+
+```
+.
+..
+/
+~
+```
 
 
 # Refs.
