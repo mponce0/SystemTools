@@ -5,4 +5,6 @@
 | `tmux` | terminal multiplexer |
 | `tree` | display file tree structure |
 | `strace` | ... |
+| `gdb`  | debugger |
+| `grpof` | profiler |
 ------------------------------
