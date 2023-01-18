@@ -12,6 +12,10 @@ Monolithic Code
 
 Spaghetti Code
 
+Script
+
+Source Code
+
 Executable
 
 Compiler
