@@ -9,4 +9,5 @@
 | `gdb`  | debugger |
 | `gprof` | profiler |
 | `valgrind` | memory profiler |
+| `ssh` | secure connection to remote servers |
 ------------------------------
