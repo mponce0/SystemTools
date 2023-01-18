@@ -29,6 +29,8 @@ cat
 more
 less
 
+# compare differences
+cmp
 diff
 vimdiff
 
