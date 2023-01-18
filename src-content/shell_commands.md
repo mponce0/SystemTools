@@ -59,11 +59,12 @@ man
 vi
 ```
 
+## Special Filenames
 ```sh
-.
-..
-/
-~
+.     # current directory
+..    # upper directory
+/     # root directory
+~     # home directory
 ```
 
 ```sh
@@ -71,6 +72,12 @@ vi
 /dev/null
 ```
 
+## File Descriptors
+```sh
+STDIN    0
+STDOUT   1
+STDERR   2
+```
 
 # Refs.
    * https://www.kernel.org/doc/man-pages/
