@@ -29,8 +29,8 @@ Variable
 Boolean
 
 Floating Point
-    Number
-    Representation
+  - Number
+  - Representation
 
 Operating System (OS)
 
