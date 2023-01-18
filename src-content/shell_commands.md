@@ -6,6 +6,7 @@ etc. and the *kernell* of the OS.
 
 # Commands
 ```sh
+# files/directories
 pwd
 cd
 mkdir
@@ -16,7 +17,11 @@ cp
 mv
 rm
 
+# permissions
 chmod
+chown
+
+#
 
 echo
 
@@ -24,11 +29,23 @@ cat
 more
 less
 
+diff
+vimdiff
+
+##
+
 hexdump
 od
 
+##
+
+watch
+
+##
+
 man
 
+## code editor
 vi
 ```
 
