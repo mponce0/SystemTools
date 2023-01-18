@@ -29,6 +29,9 @@ cat
 more
 less
 
+head
+tail
+
 # compare differences
 cmp
 diff
@@ -38,6 +41,11 @@ vimdiff
 
 hexdump
 od
+
+##
+
+wc
+awk
 
 ##
 
