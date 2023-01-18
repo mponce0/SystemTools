@@ -66,6 +66,11 @@ vi
 ~
 ```
 
+```sh
+/dev/shm    # RAMdisk
+/dev/null
+```
+
 
 # Refs.
    * https://www.kernel.org/doc/man-pages/
