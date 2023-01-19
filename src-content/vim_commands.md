@@ -100,6 +100,7 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 All the seteable parameters of `vi` can be set in a configuration file,
 usually located in the user's homedir named `.vimrc`.
 
+
 ### Plugins
 `vi` has a large set of contributed *plugins* which allows for a highly cutomizable experience.
 Plugins will be installed in a `.vim` sub-directory within the user's home-dir.
@@ -111,6 +112,56 @@ Personally, I don't use a lot of plugins, but here are some of the ones I'm curr
 [gitgutter](https://github.com/airblade/vim-gitgutter).
 
 See more plugins at, https://vimawesome.com
+
+#### VIM Plugins Tree Structure
+### VIM directory structure
+
+```
+/Users/marcelo/.vim/pack/
+├── dist
+│   └── start
+│       ├── vim-airline
+│       │   ├── autoload
+│       │   │   └── airline
+│       │   │       ├── extensions
+│       │   │       │   ├── tabline
+│       │   │       │   │   └── formatters
+│       │   │       │   └── wordcount
+│       │   │       │       └── formatters
+│       │   │       ├── formatter
+│       │   │       └── themes
+│       │   ├── doc
+│       │   ├── plugin
+│       │   └── test
+│       └── vim-airline-themes
+│           ├── autoload
+│           │   └── airline
+│           │       └── themes
+│           ├── doc
+│           ├── plugin
+│           └── test
+├── plugins
+│   └── start
+│       └── lightline
+│           ├── autoload
+│           │   └── lightline
+│           │       └── colorscheme
+│           ├── doc
+│           ├── plugin
+│           └── test
+└── vendor
+    └── start
+        └── nerdtree
+            ├── autoload
+            │   └── nerdtree
+            ├── doc
+            ├── lib
+            │   └── nerdtree
+            ├── nerdtree_plugin
+            ├── plugin
+            └── syntax
+```
+
 
 
 ## Examples
