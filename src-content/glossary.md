@@ -19,8 +19,20 @@ Source Code
 Executable
 
 Compiler
+  standard
 
 Interpreter
+
+Compilation
+  Stages/Phases
+
+Debugger
+
+Library
+
+Machine Code (binary code)
+
+Run-time error
 
 
 Memory Model
@@ -47,13 +59,6 @@ Terminal
 
 Command Line
 
-Debugger
-
-Library
-
-Machine Code (binary code)
-
-Run-time error
 
 ---
 
