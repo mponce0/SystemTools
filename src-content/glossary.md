@@ -14,23 +14,25 @@ Examples: Python, C, C++, Java, Fortran, R, C#, etc.
 
 ## Modularity
 
+
+## Machine Code (binary code)
+Computers can only understand an specific set of instructions, known as **binary code** -- mostly because these are written in binary format (i.e. using 0s and 1s), but sometimes also represented in octal (base-8) or hexadecimal (base-16).
+
+## Source Code
+Term usef to refer to a program when the porgramming language used is *compiled* instead of interpreted.
+
+## Script
+used to specify the "source code", i.e. the implementation of the prrogram used in *interpreted*-type programming languages.
+
 ## Monolithic Code
 it referers to the source code of a program which it has been written without any modular implementation, i.e. wihtout function definitions, proper code etiquete such indentation, etc.
 
 ## Spaghetti Code
 usually a variation on _Monolithic Code_ where not only the code etiquette is not present nbut also indentation is completelly aribitrary making it really hard to follow and read.
 
-## Machine Code (binary code)
-Computers can only understand an specific set of instructions, known as **binary code** -- mostly because these are written in binary format (i.e. using 0s and 1s), but sometimes also represented in octal (base-8) or hexadecimal (base-16).
-
-## Source Code
-Named given to a program when the porgramming language used is *compiled* instead of interpreted.
-
-## Script
-used to specify the "source code", i.e. the implementation of the prrogram used in *interpreted*-type programming languages.
-
-
 ## Executable
+Is the program, machine code, that is being generated from a source code and can be run in the computer.
+It is composed by the translation of the source code into binary code.
 
 ## Compiler
 Program used to read and process the *source code* and generate an execurtable that can be run in the computer.
@@ -57,19 +59,23 @@ Differently from an interpreter the compiler will read the whole source code, an
 
 
 ## Debugger
+Utility program used to trace and analyuze the live execution of a program.
+Used mostly to identify errors or problems with the implementation of a code.
 
 ## Library
 
 
 
 ## Run-time error
-
+Error that occurs during the execution of a program.
 
 ## Memory Model
+Theoretical abstraction and description of how variables and memory is laid down and organize.
 
 ## Variable
 
 ## Boolean
+Special type of variable that can only store two possible values (aka binary), usually represented as 0/1, or, True/False.
 
 ## Floating Point
   - Number
