@@ -10,6 +10,17 @@ precise series and sequence of instructions, specifying the actions to be follow
 Set of instructions, standards, rules and specifications follow to be translated into *machine code* to be executed by the computer.
 Examples: Python, C, C++, Java, Fortran, R, C#, etc.
 
+There are several ways in which programming languages are grouped or classified.
+
+For instance, they can be grouped by how "close" to the actual hardware and 
+   - high-level, is a programming level that offers a lot of abstractions and pre-defined functionalities when writting programs. Examples of this are: Python, R, ...
+   - low-level, refers to a programming level that is very close (low) to the hardware details is. Examples of this are: C, Fortran, assembly.
+
+Another possible way to classify programming languages is based on how the *translation* from the source code into the machine code is done:
+   - compiled,
+   - interpreted,
+   
+
 ## Function
 
 ## Modularity
@@ -19,7 +30,10 @@ Examples: Python, C, C++, Java, Fortran, R, C#, etc.
 Computers can only understand an specific set of instructions, known as **binary code** -- mostly because these are written in binary format (i.e. using 0s and 1s), but sometimes also represented in octal (base-8) or hexadecimal (base-16).
 
 ## Source Code
-Term usef to refer to a program when the porgramming language used is *compiled* instead of interpreted.
+Term used to refer to a program when the porgramming language used is *compiled* instead of interpreted.
+
+## Pseudo-code
+General 
 
 ## Script
 used to specify the "source code", i.e. the implementation of the prrogram used in *interpreted*-type programming languages.
