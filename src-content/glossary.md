@@ -74,6 +74,15 @@ Differently from an interpreter the compiler will read the whole source code, an
       - *compilation*
       - *linking*
 
+   * Compilation errors
+      Produced by the compiler, these represent situations in which the compiler can not generate the corresponding binary code from a source code.
+      Causes for this vary, but could include syntaxtical mistakes, improver instructions implementation, types missmatches, etc.
+
+   * Warning Messages
+      These observations and concerns raised by the compiler. Warning won't stop the compiler from generating an executable but in general are a sympton of soemthing else that may not be working correctly or as we might expect to.
+      In general the recommendation is to adjust the code until the compilation does not generate any warning messages or at least to understand why these are there.
+      Recommended flags to use during compilation: ```-Wall``` and ```-Werror```.
+
 
 ## Debugger
 Utility program used to trace and analyuze the live execution of a program.
