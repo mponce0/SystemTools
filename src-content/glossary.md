@@ -18,7 +18,10 @@ For instance, they can be grouped by how "close" to the actual hardware and
 
 Another possible way to classify programming languages is based on how the *translation* from the source code into the machine code is done:
    - compiled,
+      the program that has to be fully read by the compiler in order to be converted into binary code so that it can be executed in the computer.
+      in general, compiled langauages do not allwo for dynamic typing, i.e. for changing on the fly the type of variable, and in part because of this are better performing than interpreted ones.
    - interpreted,
+      the program is read line by line and execute by the interpreter. Because of this and other pecularities, such as garbage collection, dynamic typing, etc.; is that interpreted programming languages are substantially slower in terms of run-time performance.
    
 
 ## Function
@@ -77,7 +80,8 @@ Utility program used to trace and analyuze the live execution of a program.
 Used mostly to identify errors or problems with the implementation of a code.
 
 ## Library
-
+Collectiion of external resources that can be used in a program by including their decalations in our code.
+Eg. this is done using ```#include <...>``` in C, or ```import ...``` in Python.
 
 
 ## Run-time error
