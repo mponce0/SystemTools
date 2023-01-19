@@ -30,10 +30,10 @@ Another possible way to classify programming languages is based on how the *tran
 Computers can only understand an specific set of instructions, known as **binary code** -- mostly because these are written in binary format (i.e. using 0s and 1s), but sometimes also represented in octal (base-8) or hexadecimal (base-16).
 
 ## Source Code
-Term used to refer to a program when the porgramming language used is *compiled* instead of interpreted.
+Term used to refer to a program when the programming language used is *compiled* instead of interpreted.
 
 ## Pseudo-code
-General 
+General way, usually language agnostic, of describing a prescription, recipe or algorithm.
 
 ## Script
 used to specify the "source code", i.e. the implementation of the prrogram used in *interpreted*-type programming languages.
