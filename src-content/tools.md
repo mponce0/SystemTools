@@ -6,11 +6,11 @@
 | `tmux` / `screen` | terminal multiplexer |
 | `tree` | display file tree structure | `tree --inodes` |
 | `stat` | display file status | 
-| `strace` | ... |
-| `objdump` | ... |
+| `strace` | trace system calls and signals |
+| `objdump` | display information from object files |
 | `xxd` | creates a hex dump (or reverse) of a given file or standard input |
-| `nm` | ... |
-| `size` | ... |
+| `nm` | list symbols from object files |
+| `size` | list section sizes and total size of binary files |
 | `ldd` | prints the required shared objects (shared libraries)  | `ldd `_executable_  |
 | `gdb`  | debugger |
 | `gprof` | profiler |
