@@ -21,4 +21,5 @@
 | `scp` | secure copy of files between remote machines |
 | `rsync` | remote synchronization of files between remote machines |
 | `vnc` | virtual network computing, connection to remotes servers  | `vncserver` |
+| `curl`/`wget` |   transfer files from a given URL (internet)  |
 -----------------------------------------
