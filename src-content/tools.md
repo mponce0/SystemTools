@@ -7,6 +7,8 @@
 | `tree` | display file tree structure | `tree --inodes` |
 | `stat` | display file status | 
 | `strace` | trace system calls and signals |
+| `hexdump` | display file contents in hexadecimal, decimal, octal, or ascii |
+| `od`  | dump files in octal and other formats    |
 | `objdump` | display information from object files |
 | `xxd` | creates a hex dump (or reverse) of a given file or standard input |
 | `nm` | list symbols from object files |
