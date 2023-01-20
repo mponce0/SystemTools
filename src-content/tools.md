@@ -11,7 +11,7 @@
 | `xxd` | creates a hex dump (or reverse) of a given file or standard input |
 | `nm` | ... |
 | `size` | ... |
-| `ldd` | ... |
+| `ldd` | prints the required shared objects (shared libraries)  | `ldd `_executable_  |
 | `gdb`  | debugger |
 | `gprof` | profiler |
 | `valgrind` | memory profiler |
