@@ -25,6 +25,7 @@ chown
 
 echo
 
+# display text files
 cat
 more
 less
@@ -39,6 +40,7 @@ vimdiff
 
 ##
 
+# binary files
 hexdump
 od
 
@@ -67,9 +69,12 @@ vi
 ~     # home directory
 ```
 
+## Special files
 ```sh
 /dev/shm    # RAMdisk
 /dev/null
+
+/proc/cpuinfo
 ```
 
 ## File Descriptors
