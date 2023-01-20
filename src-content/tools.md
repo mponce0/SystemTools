@@ -2,6 +2,7 @@
 |--------|-------------------|----------|
 | `top`/`htop`/`atop`/`btop` | process and resources manager   |
 | `ps`/`pstree` | process manager | `ps aux` |
+| `uname`   |   system information  |   `uname -a`  |
 | `netstat` | network analyzer  |
 | `tmux` / `screen` | terminal multiplexer |
 | `tree` | display file tree structure | `tree --inodes` |
