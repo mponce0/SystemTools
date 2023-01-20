@@ -18,4 +18,5 @@
 | `ssh` | secure connection to remote servers | 
 | `scp` | secure copy of files between remote machines |
 | `rsync` | remote synchronization of files between remote machines |
-------------------------------
+| `vnc` | virtual network computing, connection to remotes servers  | `vncserver` |
+-----------------------------------------
