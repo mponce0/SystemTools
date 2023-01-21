@@ -25,9 +25,10 @@ Another possible way to classify programming languages is based on how the *tran
    
 
 ## Function
+   ToBeCompleted
 
 ## Modularity
-
+   ToBeCompleted
 
 ## Machine Code (binary code)
 Computers can only understand an specific set of instructions, known as **binary code** -- mostly because these are written in binary format (i.e. using 0s and 1s), but sometimes also represented in octal (base-8) or hexadecimal (base-16).
@@ -100,6 +101,7 @@ Error that occurs during the execution of a program.
 Theoretical abstraction and description of how variables and memory is laid down and organize.
 
 ## Variable
+ToBeCompleted
 
 ## Boolean
 Special type of variable that can only store two possible values (aka binary), usually represented as 0/1, or, True/False.
@@ -109,19 +111,29 @@ Special type of variable that can only store two possible values (aka binary), u
   - Representation
 
 ## Overflow
+   ToBeCompleted
 
 ## Underflow
+   ToBeCompleted
 
 ## Operating System (OS)
-
-## Flags
-
-## Arguments
+   ToBeCompleted
+   - kernell
 
 ## Terminal
+   ToBeCompleted
 
 ## Command Line
+   ToBeCompleted
 
+## Arguments
+   ToBeCompleted
+
+## Command Line Arguments
+   ToBeCompleted
+
+## Flags
+   ToBeCompleted
 
 ---
 
