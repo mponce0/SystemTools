@@ -20,13 +20,15 @@
   - Peripherials:
 	  - I/O devices: keyboard, screen, HDD, SDD
 
----
-   - _cache_, aka "cache memory" or "cache lines" are an intermediate memory space between main RAM registers on the microprocessor
+
+## Modern Architectures
+In addition to the elements denoted by von Neumann architecture, 
+   - _cache_, aka "cache memory" or "cache lines" are an intermediate memory space between main RAM registers on the microprocessor. There are 3 levels of cache, referred as L1, L2 and L3, increasing in size and decrasing in speed of access to the data storage on them respectively.
    - _core_, another term for CPU, multi-core architectures consist of multiple cores or CPUs
    - _die_,
    - _microprocessor_, integrated circuit containing multiple components, eg. chip with CPU+cache+...
    - _chips_, generic way to refer to integrated circuits with different components, architectures, etc.
----
+
 
 ```
 										--[motherboard schematics]--
