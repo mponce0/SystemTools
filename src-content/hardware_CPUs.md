@@ -1,3 +1,7 @@
+In this section, we present a brief overview of the main models used to understand and design modern computers, i.e. the **Turing machine** and **von Neumann architecture**.
+There are other ones, such as, the **Harvard architecture**; or even the paradigm shift presented by other devices as:
+*FPGA*, *post-Moore architectures*, *neuro-morphic chips*, *GPU*s and acceleratorrs up to certain point, or more dramatically *quantum devices*.
+
 ## Turing machine
    Refers to a *mathematical model* of computation describing an abstract machine.
    The model can be considered a generic example of a CPU.
