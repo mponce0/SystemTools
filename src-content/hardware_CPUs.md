@@ -21,10 +21,10 @@
 	  - I/O devices: keyboard, screen, HDD, SDD
 
 ---
-   - core, another term for CPU, multi-core architectures consist of multiple cores or CPUs
-   - die,
-   - microprocessor, integrated circuit containing multiple components, eg. chip with CPU+cache+...
-   - chips, generic way to refer to integrated circuits with different components, architectures, etc.
+   - _core_, another term for CPU, multi-core architectures consist of multiple cores or CPUs
+   - _die_,
+   - _microprocessor_, integrated circuit containing multiple components, eg. chip with CPU+cache+...
+   - _chips_, generic way to refer to integrated circuits with different components, architectures, etc.
 ---
 
 ```
