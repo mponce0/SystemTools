@@ -21,6 +21,7 @@
 	  - I/O devices: keyboard, screen, HDD, SDD
 
 ---
+   - _cache_, aka "cache memory" or "cache lines" are an intermediate memory space between main RAM registers on the microprocessor
    - _core_, another term for CPU, multi-core architectures consist of multiple cores or CPUs
    - _die_,
    - _microprocessor_, integrated circuit containing multiple components, eg. chip with CPU+cache+...
