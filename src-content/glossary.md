@@ -85,6 +85,12 @@ Differently from an interpreter the compiler will read the whole source code, an
       Recommended flags to use during compilation: ```-Wall``` and ```-Werror```.
 
 
+## Bug
+  ToBeCompleted
+
+## Crash
+  ToBeCompleted
+
 ## Debugger
 Utility program used to trace and analyuze the live execution of a program.
 Used mostly to identify errors or problems with the implementation of a code.
