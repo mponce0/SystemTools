@@ -1,0 +1,14 @@
+# define compiler
+CC = gcc
+# compilation flags
+CFLAGS =  -Wall -g -std=c99 -Werror
+
+myprog: file1.o file2.o
+        $(CC) $(CFLAGS) -o $@ $^
+  
+.%o: %.c file.h
+        $(CC) $(CFLAGS) -c $<
+
+.PHONY: clean
+clean:
+        rm *.o
