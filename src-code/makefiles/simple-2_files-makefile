@@ -1,13 +1,25 @@
+
 # define compiler
 CC = gcc
 # compilation flags
 CFLAGS =  -Wall -g -std=c99 -Werror
+
+###
+PACKAGE   = package
+VERSION   = ` date +"%Y.%m%d" `
+ARCHIVE   = $(PACKAGE)-$(VERSION)
+###
 
 myprog: file1.o file2.o
         $(CC) $(CFLAGS) -o $@ $^
   
 .%o: %.c file.h
         $(CC) $(CFLAGS) -c $<
+
+
+dist:
+        tar -cf $(ARCHIVE).tar .
+
 
 .PHONY: clean
 clean:
