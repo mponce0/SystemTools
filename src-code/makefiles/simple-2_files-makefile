@@ -5,9 +5,9 @@ CC = gcc
 CFLAGS =  -Wall -g -std=c99 -Werror
 
 ###
-PACKAGE   = package
-VERSION   = ` date +"%Y.%m%d" `
-ARCHIVE   = $(PACKAGE)-$(VERSION)
+PACKAGE = package
+VERSION = ` date +"%Y.%m%d" `
+ARCHIVE = $(PACKAGE)-$(VERSION)
 ###
 
 myprog: file1.o file2.o
@@ -18,9 +18,9 @@ myprog: file1.o file2.o
 
 
 dist:
-        tar -cf $(ARCHIVE).tar .
+	tar -cf $(ARCHIVE).tar .
 
 
 .PHONY: clean
 clean:
-        rm *.o
+	rm *.o
