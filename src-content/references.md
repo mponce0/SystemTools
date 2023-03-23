@@ -13,4 +13,9 @@
    - Memory Profiler
       valgrind
 
+## Misc.
+   - Dictionary of Algorithms and Data Structures
+	https://www.nist.gov/dads/
+
+   - 
 ---
