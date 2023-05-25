@@ -87,4 +87,4 @@ STDERR   2
 # Refs.
    * https://www.kernel.org/doc/man-pages/
    * https://man7.org/tlpi/index.html
-   * 
+   * http://linuxcommand.org
