@@ -8,7 +8,7 @@ etc. and the *kernell* of the OS.
 ```sh
 # files/directories
 pwd
-cd
+cd  # cd - (go to previous directory)  |  cd ~ (go to home-dir)
 mkdir
 rmdir
 
