@@ -7,19 +7,23 @@ etc. and the *kernell* of the OS.
 # Commands
 ```sh
 # files/directories
-pwd
-cd  # cd - (go to previous directory)  |  cd ~ (go to home-dir)
-mkdir
-rmdir
+pwd  # print current working directory
+cd   # change directory
+  # special uses:
+  #  cd -   =>  goes to previous directory
+  #  cd ~   =>  goes to home-dir
+  #  cd ..  =>  goes to upper (parent) directory
+mkdir  # create a directory
+rmdir  # remove a directory
 
-ls
-cp
-mv
-rm
+ls  # list files
+cp  # copy files
+mv  # move or rename files
+rm  # delete files
 
 # permissions
-chmod
-chown
+chmod  # change access modes
+chown  # change ownership
 
 #
 
@@ -64,9 +68,9 @@ vi
 ## Special Filenames
 ```sh
 .     # current directory
-..    # upper directory
+..    # upper (parent) directory
 /     # root directory
-~     # home directory
+~     # user's home directory
 ```
 
 ## Special files
