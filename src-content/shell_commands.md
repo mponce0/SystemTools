@@ -21,6 +21,23 @@ The typical way to invoque these commands is using the command name followed by 
 ```sh
    CMD [arg1] [arg2] [...] arg_i arg_ii ...
 ```
+where `[]` represents *optional* arguments; i.e. argumwents which can or can not be present at the moment of executing the command.
+
+For instance,
+```sh
+# the ls command, lists the content of the current directory
+# in this case is used without any CLA
+ls
+
+# we can use a specific CLA: -l, known as a "flag" to instruct ls to provide more details
+ls -l
+
+# or we can even modify the directory where ls is going to list its content, in this case in the "root" directory of the system
+ls /
+
+# we can also combine multiple CLAs
+ls -l /
+```
 
 Moreover, because the shell runs an interpreter to process these commands, it is possible to combine these commands in a file and process them in *batch mode*.
 This is also known as **shell scripting*.
