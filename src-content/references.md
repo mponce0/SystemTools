@@ -3,7 +3,7 @@
 ## Linux
    - https://linuxcommand.org/
 
-## Multiplexer
+## Terminal Multiplexer
    - https://github.com/tmux/tmux/wiki/Getting-Started
 
 
