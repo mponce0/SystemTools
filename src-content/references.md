@@ -3,8 +3,9 @@
 ## Linux
    - https://linuxcommand.org/
 
-## Terminal Multiplexer
+## Terminal Multiplexers
    - https://github.com/tmux/tmux/wiki/Getting-Started
+   - https://github.com/gnome-terminator
 
 
 ## Tools
