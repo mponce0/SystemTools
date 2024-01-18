@@ -44,27 +44,47 @@ This is also known as **shell scripting*.
 
 
 # Commands
+   * Type:
+         indicates the command is a standard or basic one (**std**), or an enhancement or extra features to the basic shell commands (**xtra**) 
+   * Category:
+        **FA**:   File Administration
+        **FS**:   File System
+        **SR**:   System Resources
+        **UM**:   User Management
 
-|   command   |   description   | standard   |   category   |
+|   command   |   description   | type   |   category   |
 |-------------|-----------------|------------|--------------|
-|   `pwd`     |   display current working directory   | std   | file managament   |
-|   `cd`      |   change working directory   |   std   | file managament   |
-|   `mkdir`   |   create a new directory   |   std   | file managament   |
-|   `rmdir`   |   delete a directory   |   std   |   file managament   |
-| |
-|   `ls`      |   list files   |   std   |   file managament   |
-|   `cp`      |   copy files   |   std   |   file managament   |
-|   `mv`      |   move or rename files   |   std   |   file managament   |
-|   `rm`      |   delete files   |   std   |   file managament   |
-|   `stat`    |   display file information   |   std   |   file managament   |
-| |
-|   `exa`     |  display files information   |   xtra (fish)   |   file managament   |
-|   `tree`    |  display files information   |   xtra          |   file management   |
-|   `mc`      |  midnight commander          |   xtra          |   file manager      |
+|   `pwd`     |   display current working directory   | std   | FA   |
+|   `cd`      |   change working directory   |   std   | FA   |
+|   `mkdir`   |   create a new directory   |   std   | FA   |
+|   `rmdir`   |   delete a directory   |   std   |   FA   |
 ||
-|   `chmod`   |   change access modes      |   std      |   file administration   |
-|   `chown`   |   change ownership         |   std      |   file administration   |
+|   `ls`      |   list files   |   std   |   FA   |
+|   `cp`      |   copy files   |   std   |   FA   |
+|   `mv`      |   move or rename files   |   std   |   FA   |
+|   `rm`      |   delete files   |   std   |   FA   |
+|   `ln`      |   link files     |   std   |   FA            |   
+|   `stat`    |   display file information   |   std   |   FA, FS   |
 ||
+|   `exa`     |  display files information   |   xtra (fish)   |   FA   |
+|   `tree`    |  display files information   |   xtra          |   FA   |
+|   `mc`      |  midnight commander          |   xtra          |   FA      |
+||
+|   `chmod`   |   change access modes      |   std      |   FA   |
+|   `chown`   |   change ownership         |   std      |   FA   |
+||
+|   `top`     |   monitoring tool          |   std      | SR   |
+|   `htop`    |   enhanced monitoring tool   |   xtra   |   SR   |
+|   `atop`    |   enhanced monitoring tool   |   xtra   |   SR   |
+|   `btop`    |   enhanced monitoring tool   |   xtra   |   SR   |
+|   `ps`      |   processes information      |   std   |   SR   |
+||
+|   `users`   |   users information   |   std   |   UM   |
+|   `groups`   |   groups information   |   std   |   UM   |
+|   `id`      |   user information   |   std   |   UM   |
+|   `who`      |   information about logged users   |   std   |   UM   |
+|   `finger`   |   information about users   |   std   |   UM   |
+---
 
 
 ```sh
