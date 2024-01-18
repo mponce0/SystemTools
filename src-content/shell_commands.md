@@ -44,6 +44,29 @@ This is also known as **shell scripting*.
 
 
 # Commands
+
+|   command   |   description   | standard   |   category   |
+|-------------|-----------------|------------|--------------|
+|   `pwd`     |   display current working directory   | std   | file managament   |
+|   `cd`      |   change working directory   |   std   | file managament   |
+|   `mkdir`   |   create a new directory   |   std   | file managament   |
+|   `rmdir`   |   delete a directory   |   std   |   file managament   |
+| |
+|   `ls`      |   list files   |   std   |   file managament   |
+|   `cp`      |   copy files   |   std   |   file managament   |
+|   `mv`      |   move or rename files   |   std   |   file managament   |
+|   `rm`      |   delete files   |   std   |   file managament   |
+|   `stat`    |   display file information   |   std   |   file managament   |
+| |
+|   `exa`     |  display files information   |   xtra (fish)   |   file managament   |
+|   `tree`    |  display files information   |   xtra          |   file management   |
+|   `mc`      |  midnight commander          |   xtra          |   file manager      |
+||
+|   `chmod`   |   change access modes      |   std      |   file administration   |
+|   `chown`   |   change ownership         |   std      |   file administration   |
+||
+
+
 ```sh
 # files/directories
 pwd  # print current working directory
