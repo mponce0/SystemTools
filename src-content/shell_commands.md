@@ -47,10 +47,11 @@ This is also known as **shell scripting*.
    * Type:
          indicates the command is a standard or basic one (**std**), or an enhancement or extra features to the basic shell commands (**xtra**) 
    * Category:
-        **FA**:   File Administration
-        **FS**:   File System
-        **SR**:   System Resources
-        **UM**:   User Management
+        - **`FA`**:   File Administration
+        - **`FS`**:   File System
+        - **`SR`**:   System Resources
+        - **`UM`**:   User Management
+        - **`NT`**: Networking
 
 |   command   |   description   | type   |   category   |
 |-------------|-----------------|------------|--------------|
