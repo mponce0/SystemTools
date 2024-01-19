@@ -105,7 +105,7 @@ man
 vi
 ```
 
-See [table of shell commands](shell_commands_table.md) for more details.
+See [table of shell commands](shell_commands_table.md) and [list of tools/utilities](tools.md) for further details.
 
 
 ## Special Filenames
