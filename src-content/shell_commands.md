@@ -40,7 +40,7 @@ ls -l /
 ```
 
 Moreover, because the shell runs an interpreter to process these commands, it is possible to combine these commands in a file and process them in *batch mode*.
-This is also known as **shell scripting*.
+This is also known as *shell scripting*.
 
 
 # Commands
