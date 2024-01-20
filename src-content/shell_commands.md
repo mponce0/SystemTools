@@ -11,11 +11,19 @@ There are different types of shells, some are older or more basic, some others a
 For instance, these are some of the most traditional ones: `sh`, `csh`, `tcsh`, `bash`;
 and  these are more modern ones: `zsh`, `fish`.
 
+There are common elements to any type of shell:
+    the *prompt* is and indication that the shell is ready to receive instructions from the user;
+    the *cursor*, usually a square or rectangle shapped character, many times blinking, awaiting for the user's input
+-- the combination of these elements are known as the command line interface.
 The most typical way to interact with the shell is via its **command line interface (CLI)**.
-The CLI allos users to input commands to perform very specific actions.
-The way in which these commands work is by peforming very well-defined, usually simple and narrow tasks.
-But one of the main advantages of the shell is that it allows us to combine multiple of these commands to perform more complicated or ellaborated tasks.
-The typical way to invoque these commands is using the command name followed by arguments, usually known as command line arguments (CLA) which are separated by "spaces".
+The CLI allows users to input commands to perform very specific actions.
+The way in which these commands work is by peforming very well-defined, usually
+simple and narrow tasks.
+But one of the main advantages of the shell is that it allows us to combine
+multiple of these commands to perform more complicated or ellaborated tasks.
+The typical way to invoque these commands is using the command's name followed
+by arguments to this program, usually known as command line arguments (CLA)
+which are separated by "spaces".
 
 ## Generic Way to Execute Commands in the shell
 ```sh
