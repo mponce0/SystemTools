@@ -24,6 +24,7 @@ In order for the OS mangae files it employs two critical elements:
   - every single file gets assigned an inode
   - in some way one could think about them as being analogous to pointers
   - when a filesystems runs out of inodes, no new files can be created until existing files are deleted
+  - Useful commands to investigate inodes: `ls -i`, `df -i`
 
 ---
 
@@ -31,7 +32,7 @@ We should mention the distintion among the "File System" as a component of the O
 This distintion plays a critical role, when in reality you speak to different professional from different fields.
 For a system administrator in a typical data center or supercomputer center, it is qwuite likely that the FS is referring to the actual hardware and supporting drivers or firmware in charge of making it functional and accessible to the OS.
 
-Moreover is possible that a computer system and its corresponding OS, operate on multiple and different file systems simulatenously.
+Moreover is possible that a computer system and its corresponding OS, operate on multiple and different types of file systems simulatenously.
 
 
 ### Different type of FS:
