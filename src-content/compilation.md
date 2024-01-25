@@ -15,6 +15,7 @@
 ## Compilation Flags
 
 * Optimization Flags: `-O0`, `-O1`, `-O2`, `-O3`
+* Compilation: `-c`
 * Warnings:  `-Wall`, `-Werror`
 * Debugging: `-g`
 * Libraries: `-I`,`-L`,`-l`
