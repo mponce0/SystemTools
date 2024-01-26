@@ -15,10 +15,16 @@
 ## Compilation Flags
 
 * Optimization Flags: `-O0`, `-O1`, `-O2`, `-O3`
-* Compilation: `-c`
+* Compilation:
+    - `-E` preprocess only
+    - `-S` compile only, not assmeble nor link
+    - `-c` compile and assemble, not link
+    - `-o` name output file
+      
 * Warnings:  `-Wall`, `-Werror`
 * Debugging: `-g`
 * Libraries: `-I`,`-L`,`-l`
+
 
 * Example
   ```sh
