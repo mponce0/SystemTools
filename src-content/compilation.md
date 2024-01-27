@@ -28,10 +28,10 @@
 
 * Example
   ```sh
-    # Compilation of the source code "myProg.c"  using the C standar '99,
-    # enabling warning and pushing them to errors,
-    # wiht optimization level 2,
-    # linking with the math library,
-    # generating an executable named "myExec" 
+    # Compilation of the source code "myProg.c"  using the C standar '99: --std=c99,
+    # enabling warning and pushing them to errors: -Wall -Werror,
+    # wiht optimization level 2: -O2,
+    # linking with the math library: -lm,
+    # generating an executable named "myExec": -o myExec
     gcc --std=c99 -Wall -Werror -O2 myProg.c  -lm  -o myExec
   ```
