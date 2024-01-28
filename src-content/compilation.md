@@ -23,6 +23,7 @@
       
 * Warnings:  `-Wall`, `-Werror`
 * Debugging: `-g`
+* Profiling/instrumentation: `-pg`
 * Libraries: `-I`,`-L`,`-l`
 
 
