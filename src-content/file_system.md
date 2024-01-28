@@ -49,5 +49,23 @@ Moreover is possible that a computer system and its corresponding OS, operate on
 
 ## Typical Linux File System
 ```sh
-
+/
+├── bin -> usr/bin
+├── boot
+├── dev
+├── etc
+├── home
+├── lib -> usr/lib
+├── lib64 -> usr/lib
+├── mnt
+├── opt
+├── proc
+├── root
+├── run
+├── sbin -> usr/bin
+├── srv
+├── sys
+├── tmp
+├── usr
+└── var
 ```
