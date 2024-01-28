@@ -43,6 +43,9 @@ Moreover is possible that a computer system and its corresponding OS, operate on
    - APFS: The proprietary Apple file system developed as a replacement for HFS+, with a focus on flash drives, SSDs, and encryption.
    - ext2, ext3, & ext4: The extended file system (ext) was the first file system created specifically for the Linux kernel.
 
+   - GPFS: a General Parallel File System, proprietary FS developed by IBM for HPC or cluster-type systems.
+   - NAS: Network Attached Storage, involves a server connected to a network providing access to storage resources.
+
 
 ## File Input/Ouput Operations (IOPs)
 
