@@ -2,7 +2,7 @@
 
 ## Compilation Stages
 
-* Pre-compiler
+* Pre-processor
    - deals with pre-processor instructions, syntax checking, etc.
 
 * Compiler
@@ -16,7 +16,7 @@
 
 * Optimization Flags: `-O0`, `-O1`, `-O2`, `-O3`
 * Compilation:
-    - `-E` preprocess only
+    - `-E` pre-process only
     - `-S` compile only, not assmeble nor link
     - `-c` compile and assemble, not link
     - `-o` name output file
