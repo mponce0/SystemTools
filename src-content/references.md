@@ -11,8 +11,10 @@
 ## Tools
    - Compiler Explorer
       https://godbolt.org
+   - C memory visualizer
+      https://pythontutor.com/
    - Memory Profiler
-      valgrind
+      valgrind https://valgrind.org/
 
 ## Misc.
    - Dictionary of Algorithms and Data Structures
