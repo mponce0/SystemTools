@@ -14,12 +14,15 @@
 
 ## Compilation Flags
 
-* Optimization Flags: `-O0`, `-O1`, `-O2`, `-O3`
+* Optimization Flags:
+    - `-O0`, `-O1`, `-O2`, `-O3`
+    - `-Ofast`, `-march=<ARCH>`
+  
 * Compilation:
-    - `-E` pre-process only
-    - `-S` compile only, not assmeble nor link
-    - `-c` compile and assemble, not link
-    - `-o` name output file
+    - `-E` pre-process only; do not compile, assemble or link.
+    - `-S` compile only; do not assemble or link.
+    - `-c` compile and assemble, but do not link.
+    - `-o <execName>` name output file
       
 * Warnings:  `-Wall`, `-Werror`
 * Debugging: `-g`
