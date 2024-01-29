@@ -26,7 +26,9 @@
 * Profiling/instrumentation: `-pg`
 * Libraries: `-I`,`-L`,`-l`
 
-* Misc.: `--version`
+* Misc.:
+    - `-v`  display built-in specs.
+    - `--version`  display compiler version
 
 
 * Example
