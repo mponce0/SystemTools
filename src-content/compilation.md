@@ -26,6 +26,8 @@
 * Profiling/instrumentation: `-pg`
 * Libraries: `-I`,`-L`,`-l`
 
+* Misc.: `--version`
+
 
 * Example
   ```sh
