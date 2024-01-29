@@ -30,6 +30,7 @@
 * Libraries: `-I`,`-L`,`-l`
 
 * Misc.:
+    - `--std=<std_ver>`  
     - `-v`  display built-in specs.
     - `--version`  display compiler version
 
