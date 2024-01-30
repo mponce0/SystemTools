@@ -20,7 +20,6 @@ By doing this it makes the hardware accessible to other programs, applications, 
 The OS is also a resource manager as it administrates resource allocations, operations management, etc. 
 It oversees the propper and appropiate utilization and assignation of the system resources to programs, agents, applicatiopns, users, etc.
 
-
 ## Linux
 As a very special type, and likely most powerful OS implementation, we will focus on the Unix/Linux type.
 
@@ -35,6 +34,12 @@ Unix/Linux has a very rich history, and perhaps more interestingly initial conce
 
 ### Open Source
  
+
+## Kernel
+See
+ - https://makelinux.github.io/kernel/diagram/
+ - https://makelinux.github.io/kernel/map/
+
 
 ## Variants
 Nopt only Linux can be seen as a "variant" or branching from the original "Unix" distribution, but there are currently several more branches co-existing on modern computers.
