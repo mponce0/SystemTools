@@ -26,7 +26,7 @@
 | `curl`/`wget` |   transfer files from a given URL (internet)  |
 ||
 | `grep`/`egrep`  |  pattern matching via regular expressions  |  `grep -inr PATTERN  FILES`  |
-| `find `  |  search for files and file statuses  |  `find ...`  |
+| `find `  |  search for files and file statuses  |  `find -L <location> -xtype l`  |
 | `awk`  |   pattern scanning and processing language  |  `awk -Fsep '{print $0 $1 $2 ...}'`  |
 | `sed`  |   stream editor for filtering and transforming text  | |
 -----------------------------------------
