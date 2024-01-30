@@ -127,19 +127,19 @@ Special type of variable that can only store two possible values (aka binary), u
    - kernell
 
 ## Terminal
-   ToBeCompleted
+   Application (program) that gives access to the shell of the operating system (OS).
 
-## Command Line
-   ToBeCompleted
+## Command Line -- aka Command Line Interface (CLI) --
+   Interface provided by the shell of the OS to interact with the file system (FS) and run applications and other programs.
 
 ## Arguments
    ToBeCompleted
 
-## Command Line Arguments
+## Command Line Arguments (CLA)
    ToBeCompleted
 
 ## Flags
-   ToBeCompleted
+   Special type of CLA that can only take pre-defined values, usually precedded by '-' or '--'
 
 ---
 
