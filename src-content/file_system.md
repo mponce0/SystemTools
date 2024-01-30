@@ -70,6 +70,18 @@ A more "realistic view" is the intertwiened relationships mantained among inodes
 
 
 ## File Input/Ouput Operations (IOPs)
+Now that we have a more "low level" view of what a file is for the OS and FS, we should clarify that accessing --i.e. reading and writing data from/to files-- is just not qhen single opeartion.
+Usually this process involves multiple operations, actions and manipulations from the OS.
+
+The most basic I/O opearations are:
+
+
+
+### A tale of Herarchies
+IOPS are the most expensive operations of any program, hence one must deal with them with caution and in most the cases attempting to minimize them.
+The reason why that's the case is because the access to information storage in storage devices ia the slowest part in modern computers, even if one considers solid-state devices (SDDs) the typical time frame is going to be orders of magnitudes larger than the number of operations perform by the micro-processor.
+
+
 
 
 ## Typical Linux FS Directory Structre
