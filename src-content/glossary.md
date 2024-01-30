@@ -129,18 +129,18 @@ Special type of variable that can only store two possible values (aka binary), u
 ## Terminal
    Application (program) that gives access to the shell of the operating system (OS).
 
-## Command Line -- aka Command Line Interface (CLI) --
+## Command Line --or-- Command Line Interface (CLI)
    Interface provided by the shell of the OS to interact with the file system (FS) and run applications and other programs.
 
 ## Arguments
-   ToBeCompleted
+   Information passed to functions or commands, they are used as input and modify or change the way in the command/function works, or as the target over which the command/function acts upon.
 
 ## Command Line Arguments (CLA)
-   ToBeCompleted
+   Addittional parameters passed to commands run from the CLI.
 
 ## Flags
    Special type of CLA that can only take pre-defined values, usually precedded by '-' or '--'
 
 ---
 
-ver 0.1 -- Last modified: Jan. 2023
+ver 0.1 -- Last modified: Jan. 2024
