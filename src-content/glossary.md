@@ -25,10 +25,17 @@ Another possible way to classify programming languages is based on how the *tran
    
 
 ## Function
-   ToBeCompleted
+   Minimal unit of cohesive code implementation that can be re-used and its designed to implement a particular and well-defined task.
+
 
 ## Modularity
-   ToBeCompleted
+   A technique and strategy used to develop code that can be separated into different *units* (or modules) and in this way combined to generate more complicated and complex programs.
+   Modular implementations offer several advantages: make the code more robust, allows for precise unit testing, portability, distribution, ease in version control, etc.
+   In C, this achieve by implementing proper functions with arguments, avoid at all cost the use of global variables (which breaks modularity!) and the separation of:
+   
+      - function's declaration, in ".h" header files
+      - function's implementation, in ".c" files
+
 
 ## Machine Code (binary code)
 Computers can only understand an specific set of instructions, known as **binary code** -- mostly because these are written in binary format (i.e. using 0s and 1s), but sometimes also represented in octal (base-8) or hexadecimal (base-16).
