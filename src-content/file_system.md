@@ -40,6 +40,8 @@ However, this another of the "nice" abstractions the OS in combination with the 
 
 A more "realistic view" is the intertwiened relationships mantained among inodes, blocks and even sectors; with its corresponding mapping and distributed pointes and links.
 
+## File System Tables
+
 
 ### Different type of FS:
    - FAT:  One of the oldest and simplest file systems. It was initially developed for MS-DOS and is still used in many removable storage devices. The two major versions of this system are FAT16 and FAT32. FAT uses a file allocation table to keep track of file locations on the disk. Used in Windows before NTFS was introduced.
