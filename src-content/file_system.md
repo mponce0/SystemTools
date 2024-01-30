@@ -27,6 +27,9 @@ In order for the OS to manage files, it employs two critical elements:
   - Useful commands to investigate inodes: `ls -i`, `df -i`
 
 ---
+
+### Diagram displaying the different elements from the OS, FS and hardware that makes possible the access (storage and retrieval) of information in not volatile devices
+
 ```
    Operating System           ||      STORAGE DEVICE
                   (( F i l e    S y s t e m ))
