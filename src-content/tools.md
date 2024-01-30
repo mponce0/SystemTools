@@ -25,6 +25,6 @@
 | `vnc` | virtual network computing, connection to remotes servers  | `vncserver` |
 | `curl`/`wget` |   transfer files from a given URL (internet)  |
 ||
-| `awk`  |   pattern scanning and processing language  |
-| `sed`  |   stream editor for filtering and transforming text  |
+| `awk`  |   pattern scanning and processing language  |  `awk -Fsep '{print $0 $1 $2 ...}'`  |
+| `sed`  |   stream editor for filtering and transforming text  | |
 -----------------------------------------
