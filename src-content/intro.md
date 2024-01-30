@@ -42,9 +42,11 @@ See
 
 
 ## Variants
-Nopt only Linux can be seen as a "variant" or branching from the original "Unix" distribution, but there are currently several more branches co-existing on modern computers.
+Not only Linux can be seen as a "variant" or branching from the original "Unix" distribution, but there are currently several more branches co-existing on modern computers.
 For instance, MacOS was oprignated from a Linux version known as "BSD", Android --the famous mobile OS-- is basicslly a Linux mobile version.
 Moreover there are many more versions of propper Linux OSes: Arch64, Debian, Ubuntu, RedHat, etc.
+
+See https://en.wikipedia.org/wiki/History_of_Unix#/media/File:Unix_history-simple.svg
 
 
 ## Distros
