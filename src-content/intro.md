@@ -44,10 +44,27 @@ As this implies that the OS source code can be inspect, reviewed by anypne willi
 
 
 
-## Kernel
-See
+## Linux OS Components
+The Linux OS is structured and architected in a modular fashion, with interchangeable and inter-connected components.
+The main components in the Linux OS are:
+  - its *kernel*
+  - a *shell* interface
+    
+
+### Kernel
+The kernel of the OS, is the core of the OS, where the OS implementation performs and deploys the basic functionalities, abstractions and simplifications of the hardware architecture where its has been installed.
+
+The kernel of the OS, being this basal layer is really complex and complicated, having to serve multiple uses and manaqing multiple resources. 
+
+An integrated view of this can be seen in the following resources:
  - https://makelinux.github.io/kernel/diagram/
  - https://makelinux.github.io/kernel/map/
+
+
+### Shell
+The shell is another component of the OS, interfacing between the users, programs, applications and the actual kernel functionalities.
+Mosly focusing in the interactions with the FS, and further commands or tools, the shell serves as an extension of the OS's kernel.
+The shell can be used to operate with files and the file system similar to what a "file exporer" graphical-user interface but with much more fine-control, precision and posible automation of the tasks that need to be peformed. 
 
 
 ## Variants
@@ -57,7 +74,7 @@ Moreover there are many more versions of propper Linux OSes: Arch64, Debian, Ubu
 
 See https://en.wikipedia.org/wiki/History_of_Unix#/media/File:Unix_history-simple.svg
 
-Considering all the possible variations and platforms were Linux can run, it is without an doubts the most popular OS, used in personal computers, workstations, latpops, mobile devices, and in particular with absolute majority in data centers and super-computer centers.
+Considering all the possible variations and platforms were Linux can run, it is without any doubts the most popular OS accross many different platforms and architectures: used in personal computers, workstations, latpops, mobile devices, and in particular with absolute majority in data centers and super-computer centers.
 
 
 ## Distros
