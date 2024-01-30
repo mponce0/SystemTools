@@ -139,7 +139,7 @@ Special type of variable that can only store two possible values (aka binary), u
    Addittional parameters passed to commands run from the CLI.
 
 ## Flags
-   Special type of CLA that can only take pre-defined values, usually precedded by '-' or '--'
+   Special type of CLA that can only take pre-defined values, usually preceeded by '-' or '--'
 
 ---
 
