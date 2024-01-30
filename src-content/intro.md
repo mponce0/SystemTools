@@ -31,4 +31,17 @@ Unix/Linux has a very rich history, and perhaps more interestingly initial conce
   - multi-process, i.e. can run and alternate among multiple programs/tasks/etc.
   - offers access control and managament of the system (hardware) resources.
 
-The Linux OS is a complex and bast software system, with multiple functionalities, systems and moving parts that intertwien their scopes and dynamnics.
+* The Linux OS is a complex and bast software system, with multiple functionalities, systems and moving parts that intertwien their scopes and dynamnics.
+
+### Open Source
+ 
+
+## Variants
+Nopt only Linux can be seen as a "variant" or branching from the original "Unix" distribution, but there are currently several more branches co-existing on modern computers.
+For instance, MacOS was oprignated from a Linux version known as "BSD", Android --the famous mobile OS-- is basicslly a Linux mobile version.
+Moreover there are many more versions of propper Linux OSes: Arch64, Debian, Ubuntu, RedHat, etc.
+
+
+## Distros
+A typical way to differentiate Linux OS are by denominating "distros".
+Linux OS is so modular and flexible, that one can create its very own personalized and customized "flavour" of Linux by combining different elements of the OS.
