@@ -21,16 +21,20 @@ The OS is also a resource manager as it administrates resource allocations, oper
 It oversees the propper and appropiate utilization and assignation of the system resources to programs, agents, applicatiopns, users, etc.
 
 ## Linux
-As a very special type, and likely most powerful OS implementation, we will focus on the Unix/Linux type.
+As a very special type, and likely the most powerful OS implementation, we will focus on the Unix/Linux type.
 
-In its very begginings, originated as the Unix OS, as the decades passed it evolved into its "modern" conception the Liunx version.
-Although the principles and phiolosophies remain quie similar among these two variants.
+In its very begginings, originated as the Unix OS, as the decades passed it evolved into its "modern" conception of the Liunx OS version.
+Although the principles and philosophies remain qutie similar among these two distant variants.
 Unix/Linux has a very rich history, and perhaps more interestingly initial conceived by the 1970s already as an OS that is:
   - multi-user, i.e. can support and handle mutiple iusers simultaneously
   - multi-process, i.e. can run and alternate among multiple programs/tasks/etc.
   - offers access control and managament of the system (hardware) resources.
 
-* The Linux OS is a complex and bast software system, with multiple functionalities, systems and moving parts that intertwien their scopes and dynamnics.
+One of the most interesting abstractions that the Linux OS does is to treat every single computer resource, including hardware components as **files**.
+This has profound imnplications, in terms of the simplicity with which the OS can deal and manage devices as well as the powerful control and oversee the OS has.
+However as we will discuss when talking about the FS, "files" won't just be the simple interpretation we may have about files but a much richer and more indepth consideration. 
+
+* The Linux OS is a complex and vast software system, with multiple functionalities, systems and moving parts that intertwien their scopes and dynamnics.
 
 
 ### Open Source
