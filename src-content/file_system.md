@@ -34,6 +34,12 @@ For a system administrator in a typical data center or supercomputer center, it 
 
 Moreover is possible that a computer system and its corresponding OS, operate on multiple and different types of file systems simulatenously.
 
+Importantly, the "view" that the OS And FS have of the files and their associated data is quite different from the one that users or even programs and applications perceive.
+From an user perspective, the files, directories, etc. appear as a well organzied, hierarchically structured formation -- see the "Typical Linux FS Directory Structure".
+However, this another of the "nice" abstractions the OS in combination with the FS present to users and applications.
+
+A more "realistic view" is the intertwiened relationships mantained among inodes, blocks and even sectors; with its corresponding mapping and distributed pointes and links.
+
 
 ### Different type of FS:
    - FAT:  One of the oldest and simplest file systems. It was initially developed for MS-DOS and is still used in many removable storage devices. The two major versions of this system are FAT16 and FAT32. FAT uses a file allocation table to keep track of file locations on the disk. Used in Windows before NTFS was introduced.
@@ -50,7 +56,7 @@ Moreover is possible that a computer system and its corresponding OS, operate on
 ## File Input/Ouput Operations (IOPs)
 
 
-## Typical Linux File System
+## Typical Linux FS Directory Structre
 ```sh
 /
 ├── bin -> usr/bin
@@ -72,3 +78,27 @@ Moreover is possible that a computer system and its corresponding OS, operate on
 ├── usr
 └── var
 ```
+
+The listing above displays the typical directory structure in a Linux-type OS.
+As such these directory entries have some standariozed meaning and purpose, e.g.
+   - `/`: this is known as the "root" directory, o.e. the 'top'-level in the directory struture
+   - `/bin`: stands for "binary", and it used to place basic programs and utilities, such as `ls` or `cp`, etc.
+   - `/boot`: information about the booting of the system is placed here
+   - `/dev`: file representation for devices are located in this directory
+   - `/etc`: system-wide configuration files and databases are located here
+   - `/home`: location for placing users' home directories
+   - `/lib`: contains shared libraries needed by programs in `/bin` or kernell modules
+   - `/mnt`: place-holder directory used to "mount" other FS, i.e. a temporary mounting point
+   - `/opt`: contains locally installed software
+   - `/proc`: a virtual file system ("procfs") containing information about all the currently running processes 
+   - `/root`: home directory of the system administrator: super-user (also known as "root", not to be confused with the root of the directory's tree)
+   - `/sbin`: super-user binarires (sbin)
+   - `/srv`: server data, data for services provided by the system
+   - `/sys`: another virtual FS ("sysfs") containing information about the hardware and OS
+   - `/tmp`: temporary directory
+   - `/usr`: "user" directory aimed to hold executables, libraries, and shared resources that are not system critical
+     - `/usr/local`
+     - `/usr/share`
+   - `/var`: a location to place varaible content, i.e. that might change frequently
+     - `/var/log`: system logs
+     
