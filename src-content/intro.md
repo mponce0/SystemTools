@@ -76,8 +76,7 @@ Not only Linux can be seen as a "variant" or branching from the original "Unix" 
 For instance, MacOS was originated from a Linux version known as "BSD", Android --the famous mobile OS-- is basicslly a Linux mobile version.
 Moreover there are many more versions of propper Linux OSes: Arch64, Debian, Ubuntu, SuSe, RedHat, etc.
 
-See (https://en.wikipedia.org/wiki/History_of_Unix#/media/File:Unix_history-simple.svg)
-[![Simplified History of the Unix/Linux OS](https://assets.digitalocean.com/articles/alligator/boo.svg](https://en.wikipedia.org/wiki/History_of_Unix#/media/File:Unix_history-simple.svg "Unix/Linux History")]
+[![Simplified History of the Unix/Linux OS]([https://assets.digitalocean.com/articles/alligator/boo.svg](https://en.wikipedia.org/wiki/History_of_Unix#/media/File:Unix_history-simple.svg)](https://en.wikipedia.org/wiki/History_of_Unix#/media/File:Unix_history-simple.svg "Unix/Linux History")]
 
 Considering all the possible variations and platforms were Linux can run, it is without any doubts the most popular OS accross many different platforms and architectures: used in personal computers, workstations, latpops, mobile devices, and in particular with absolute majority in data centers and super-computer centers.
 
