@@ -24,4 +24,7 @@
 | `rsync` | remote synchronization of files between remote machines |
 | `vnc` | virtual network computing, connection to remotes servers  | `vncserver` |
 | `curl`/`wget` |   transfer files from a given URL (internet)  |
+||
+| `awk`  |   pattern scanning and processing language  |
+| `sed`  |   stream editor for filtering and transforming text  |
 -----------------------------------------
