@@ -33,8 +33,8 @@ Another possible way to classify programming languages is based on how the *tran
    Modular implementations offer several advantages: make the code more robust, allows for precise unit testing, portability, distribution, ease in version control, etc.
    In C, this achieve by implementing proper functions with arguments, avoid at all cost the use of global variables (which breaks modularity!) and the separation of:
    
-      - function's declaration, in ".h" header files
-      - function's implementation, in ".c" files
+   - function's declaration, in "`.h`" header files
+   - function's implementation, in "`.c`" files
 
 
 ## Machine Code (binary code)
