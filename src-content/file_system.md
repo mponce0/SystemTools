@@ -89,6 +89,7 @@ As such these directory entries have some standariozed meaning and purpose, e.g.
    - `/dev`: file representation for devices are located in this directory
    - `/etc`: system-wide configuration files and databases are located here
    - `/home`: location for placing users' home directories
+     - `/home/marcelo`
    - `/lib`: contains shared libraries needed by programs in `/bin` or kernell modules
    - `/mnt`: place-holder directory used to "mount" other FS, i.e. a temporary mounting point
    - `/opt`: contains locally installed software
