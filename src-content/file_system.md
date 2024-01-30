@@ -10,7 +10,7 @@ By now, we understand that a "file" is just not the typical construct we have ab
 In particular in Unix and Linux type OSes, a file plays a critical role: **any single resource in the comptuer system is described as a file**.
 This unique perspective makes this abstraction at the level of the OS, one of the most powerful one but also one of the most versatile and usefull one.
 
-In order for the OS mangae files it employs two critical elements:
+In order for the OS to manage files, it employs two critical elements:
 
 ## Blocks
    - abstractions of data on the filesystem
@@ -26,6 +26,16 @@ In order for the OS mangae files it employs two critical elements:
   - when a filesystems runs out of inodes, no new files can be created until existing files are deleted
   - Useful commands to investigate inodes: `ls -i`, `df -i`
 
+---
+```
+   Operating System           ||      STORAGE DEVICE
+                  (( F i l e    S y s t e m ))
+      - inodes
+            |            [firmware]
+            V            [drviers/controllers]
+      - blocks   -----------------------> sectors
+
+```
 ---
 
 We should mention the distintion among the "File System" as a component of the OS, and the filesystem actually related to specific storage devices.
