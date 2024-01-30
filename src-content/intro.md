@@ -32,8 +32,17 @@ Unix/Linux has a very rich history, and perhaps more interestingly initial conce
 
 * The Linux OS is a complex and bast software system, with multiple functionalities, systems and moving parts that intertwien their scopes and dynamnics.
 
+
 ### Open Source
- 
+Another core principle of the Linux philosphy, or design principles, is that Linux is a *free* and *open source* initiative.
+I.e. that the source code, the actual programs that compose the OS are free to use and freely accessible to anyone and everyone.
+One can just simply obtan the source code of the OS, look at it, modify it, improve, change it, adapt it to its own needs and preferences.
+
+This is one of the core principles at which Linux supporters and adopters adhere to.
+It has profound implications from the philosophical stand-point but also from pragmatical aspects as well.
+As this implies that the OS source code can be inspect, reviewed by anypne willing to... interestingly enough this has become one of the strongest and most appealing features for many from the Linux OS (myself included!), of course in addition to its robustness, design principles, core secuity aspects, etc.
+
+
 
 ## Kernel
 See
@@ -44,7 +53,7 @@ See
 ## Variants
 Not only Linux can be seen as a "variant" or branching from the original "Unix" distribution, but there are currently several more branches co-existing on modern computers.
 For instance, MacOS was oprignated from a Linux version known as "BSD", Android --the famous mobile OS-- is basicslly a Linux mobile version.
-Moreover there are many more versions of propper Linux OSes: Arch64, Debian, Ubuntu, RedHat, etc.
+Moreover there are many more versions of propper Linux OSes: Arch64, Debian, Ubuntu, SuSe, RedHat, etc.
 
 See https://en.wikipedia.org/wiki/History_of_Unix#/media/File:Unix_history-simple.svg
 
