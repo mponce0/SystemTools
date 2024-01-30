@@ -7,8 +7,8 @@ Different file systems have varying characteristics and are often specific to ce
 
 By now, we understand that a "file" is just not the typical construct we have about the data stored on it but also all the information related to it, such as its metadata, and more fundamental aspects like inodes, blocks, etc.
 
-In particular in Unix and Linux type OSes, a file plays a critical role: any single resource in the comptuer system is described as a file.
-This unique perspective makes this abstractions in the OS, one of the most powerful ones but also one of the most versatile and usefull ones.
+In particular in Unix and Linux type OSes, a file plays a critical role: **any single resource in the comptuer system is described as a file**.
+This unique perspective makes this abstraction at the level of the OS, one of the most powerful one but also one of the most versatile and usefull one.
 
 In order for the OS mangae files it employs two critical elements:
 
