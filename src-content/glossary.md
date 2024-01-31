@@ -148,6 +148,13 @@ Special type of variable that can only store two possible values (aka binary), u
 ## Flags
    Special type of CLA that can only take pre-defined values, usually preceeded by '-' or '--'
 
+
+## TUI
+   Text User Interface
+
+## GUI
+   Graphics User Interface
+
 ---
 
 ver 0.1 -- Last modified: Jan. 2024
