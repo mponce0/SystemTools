@@ -150,10 +150,10 @@ Special type of variable that can only store two possible values (aka binary), u
 
 
 ## TUI
-   Text User Interface
+   Text User Interface, i.e. a user interface based on text or console.
 
 ## GUI
-   Graphics User Interface
+   Graphics User Interface, i.e. a user interface based on graphical interactions.
 
 ---
 
