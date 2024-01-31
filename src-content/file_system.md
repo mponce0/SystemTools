@@ -54,7 +54,12 @@ However, this another of the "nice" abstractions the OS in combination with the 
 
 A more "realistic view" is the intertwiened relationships mantained among inodes, blocks and even sectors; with its corresponding mapping and distributed pointes and links.
 
+
 ## File System Tables
+
+* Process Control Block
+* System-Wide Open File Table
+* Vnode Table
 
 
 ### Different type of FS:
@@ -73,8 +78,27 @@ A more "realistic view" is the intertwiened relationships mantained among inodes
 Now that we have a more "low level" view of what a file is for the OS and FS, we should clarify that accessing --i.e. reading and writing data from/to files-- is just not qhen single opeartion.
 Usually this process involves multiple operations, actions and manipulations from the OS.
 
-The most basic I/O opearations are:
+### Basic I/O opearations
+   - Finding a file (`ls`)
+     - Check if that file exists, read metadata (file size, date stamp etc.)
+   - Opening a file:
+      Check if that file exists, see if opening the file is allowed, possibly create it, find the block that has the (first part of) the file system.
+   - Reading a file
+       Position to the right spot, read a block, take out right part
+   - Writing to a file:
+      Check where there is space, position to that spot, write the block. Repeated if the data read/written spans multiple blocks.
+   - Move the file pointer (*seek*):
+      File system must check were on disk the data is.
+   - Close the file.
 
+
+### Basic File I/O Functions (`stdio.h`)
+
+...
+
+## File Interfacees in C/Unix
+
+...
 
 
 ### A tale of Hierarchies
