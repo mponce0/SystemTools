@@ -77,11 +77,21 @@ The most basic I/O opearations are:
 
 
 
-### A tale of Herarchies
+### A tale of Hierarchies
 IOPS are the most expensive operations of any program, hence one must deal with them with caution and in most the cases attempting to minimize them.
 The reason why that's the case is because the access to information storage in storage devices ia the slowest part in modern computers, even if one considers solid-state devices (SDDs) the typical time frame is going to be orders of magnitudes larger than the number of operations perform by the micro-processor.
 
-
+```
+  speed    #cyles                                            capacity
+  fastest  o(1)                    RX                        small      |
+           o(10)                 cache                                  | on-chip
+           o(100)              main memory                             || in-board
+           o(100)         Solid State Devices (SSD)                   ||| 
+           o(1000)    Traditional Spining Devices (HDD)               ||| outboard
+           o(10000)         Optical disks (CD)                       ||||
+           o(100000)           Magnetic Tape                 large   |||| offline
+  slowest  o(1000000)       Network Communication                   ||||| offsite
+```
 
 
 ## Typical Linux FS Directory Structre
