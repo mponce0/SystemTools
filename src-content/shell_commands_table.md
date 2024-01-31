@@ -24,7 +24,7 @@
 ||
 |   `exa`     |  display files information   |   xtra (fish)   |   FA   |
 |   `tree`    |  display files information   |   xtra          |   FA   |
-|   `mc`      |  midnight commander          |   xtra          |   FA      |
+|   `mc`      |  midnight commander: file manager w/TUI         |   xtra          |   FA      |
 ||
 |   `chmod`   |   change access modes      |   std      |   FA   |
 |   `chown`   |   change ownership         |   std      |   FA   |
