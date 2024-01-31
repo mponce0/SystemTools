@@ -94,9 +94,29 @@ Usually this process involves multiple operations, actions and manipulations fro
 
 ### Basic File I/O Functions (`stdio.h`)
 
-...
+```C
+// Open
+FILE *fopen(const char *path, const char *mode);
 
-## File Interfacees in C/Unix
+// Input:
+int fscanf(FILE *stream, const char *format,...);
+char *fgets(char *s, int size, FILE *stream);
+char fgetc(FILE *stream);
+
+// Output:
+int fprintf(FILE *stream, const char *format,...);
+int fputs(const char *str, FILE *stream);
+
+// Position cursor:
+int fseek(FILE *stream, long int offset, int whence);
+void rewind(FILE *stream);
+
+// Close
+int fclose(FILE *stream);
+```
+
+
+## File Interfaces in C/Unix
 
 ...
 
