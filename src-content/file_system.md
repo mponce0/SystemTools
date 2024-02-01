@@ -229,14 +229,14 @@ The reason why that's the case is because the access to information storage in s
 
 ```
   speed    #cyles                                            capacity
-  fastest  o(1)                    RX                        small      |
-           o(10)                 cache                                  | on-chip
-           o(100)              main memory                             || in-board
-           o(100)         Solid State Devices (SSD)                   ||| 
-           o(1000)    Traditional Spining Devices (HDD)               ||| outboard
-           o(10000)         Optical disks (CD)                       ||||
-           o(100000)           Magnetic Tape                 large   |||| offline
-  slowest  o(1000000)       Network Communication                   ||||| offsite
+  fastest   o(1)                    RX                        small       |
+    ^       o(10)                 cache                         |         | on-chip
+    |       o(100)              main memory                     |        || in-board
+    |       o(100)         Solid State Devices (SSD)            |       ||| 
+    |       o(1000)    Traditional Spining Devices (HDD)        |       ||| outboard
+    |       o(10000)         Optical disks (CD)                 V      ||||
+    |       o(100000)           Magnetic Tape                 large    |||| offline
+  slowest   o(1000000)       Network Communication                    ||||| offsite
 ```
 
 
