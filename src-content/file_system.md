@@ -289,4 +289,5 @@ As such these directory entries have some standariozed meaning and purpose, e.g.
      
 
 ## References
-   - Interesting reading, https://developer.ibm.com/tutorials/l-linux-filesystem/
+   - Interesting reading:
+       "Anatomy of the Linux file system", https://developer.ibm.com/tutorials/l-linux-filesystem/
