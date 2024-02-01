@@ -105,11 +105,51 @@ For each process in the system, the OS automatically opens the three standard fi
 | Standard Output | `stdout` |   1                 |   screen    |
 | Standard Error  | `stderr` |   2                 |   screen    |
 
-## File System Tables
 
-* Process Control Block
-* System-Wide Open File Table
-* Vnode Table
+## File System Tables
+The OS system will mantain *in-memory structures* to manage and track open files.
+It does this by using a combination of of tables and cross-referencing processes, file descriptors and files (using inodes).
+
+Each time a file is opened, a new entry is added to these structures.
+The process involves finding the corresponding inode for the given file, check permissions from the metadata and initialize/poition the *cursor* at the beggining of the file.
+
+The in-memory structures mantained by the OS are:
+   * **Process Control Block**
+     
+        a table containinf the *File Descriptor Table* for each process where eery single file opened by the process has an entry
+
+      |  FD |  filename  |
+      |-----|------------|
+      |  0  |  stdin   |
+      |  1  |  stdout   |
+      |  2  |  stderr   |
+      |  3  |  data.txt   |
+      |  4  |  data2.dat   |
+      | ... |  ...   |
+     
+* **System-Wide Open File Table**
+
+  The list of all files opened in the system, with its current cursor positioning
+
+     | System-Wide Open Table |
+     |------------------|
+     | STDIN            |
+     | STDOUT           |
+     | STDERR           |
+     | data.txt, offset, ...   |
+     | data2.txt, offset, ...  |
+     | ... , ...               |
+  
+  
+* **Vnode Table**
+  
+  The list of all inodes associted to the open files.
+  
+     | Vnode Table   |
+     |---------------|
+     | inode X, ...  |
+     | inode Y, ...  |
+     | ...           |
 
 
 ## File Input/Ouput Operations (IOPs)
