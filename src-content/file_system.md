@@ -132,13 +132,13 @@ The in-memory structures mantained by the OS are:
   The list of all files opened in the system, with its current cursor positioning
 
      | System-Wide Open Table |
-     |------------------|
-     | STDIN            |
-     | STDOUT           |
-     | STDERR           |
-     | data.txt, offset, ...   |
-     | data2.txt, offset, ...  |
-     | ... , ...               |
+     |------------------------|
+     | STDIN                  |
+     | STDOUT                 |
+     | STDERR                 |
+     | data.txt, offset, ...  |
+     | data2.txt, offset, ... |
+     | ... , ...              |
   
   
 * **Vnode Table**
@@ -160,14 +160,14 @@ A generic and typical "relational" representation would be,
 || File Descriptor Table ||
 ||   0   stdin           ||
 ||   1   stdout          ||
-||   2   stderr          ||            || System-Wide Open File Table ||        || Vnode Table  ||
-||   3   data.txt        ||.......     ||   STDIN                     ||   :--->|| inode X, ... ||
-||   4   data2.dat       ||      :     ||   STDOUT                    ||   :    || inode Y, ... ||
-||   5   sample.txt      ||      :     ||   STDERR                    ||   :    || inode Z, ... ||
-|-------------------------|      ----->||   data.txt , offset, ...    ||...:    ||  . . .       ||
-                                       ||   data2.dat , offset, ...   ||        ||  . . .       ||
-[[ Process j ]]                        ||   sample.txt , offset, ...  ||        ||  . . .       ||
-|  Process Control Table  |      :---->||   data.bin , offset, ...    ||        |----------------|
+||   2   stderr          ||            |  System-Wide Open File Table  |        |  Vnode Table     |
+||   3   data.txt        ||.......     ||   STDIN                     ||   :--->||  inode X, ...  ||
+||   4   data2.dat       ||      :     ||   STDOUT                    ||   :    ||  inode Y, ...  ||
+||   5   sample.txt      ||      :     ||   STDERR                    ||   :    ||  inode Z, ...  ||
+|-------------------------|      ----->||   data.txt , offset, ...    ||...:    ||   . . .        ||
+                                       ||   data2.dat , offset, ...   ||        ||   . . .        ||
+[[ Process j ]]                        ||   sample.txt , offset, ...  ||        ||   . . .        ||
+|  Process Control Table  |      :---->||   data.bin , offset, ...    ||        |------------------|
 || File Descriptor Table ||      :     ||   data2.dat , offset, ...   ||
 ||   0   stdin           ||      :     ||   . . .                     ||
 ||   1   stdout          ||      :     ||   . . .                     ||
