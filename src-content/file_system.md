@@ -55,6 +55,32 @@ However, this another of the "nice" abstractions the OS in combination with the 
 A more "realistic view" is the intertwiened relationships mantained among inodes, blocks and even sectors; with its corresponding mapping and distributed pointes and links.
 
 
+## File Interfaces in C/Unix
+
+There are two main mechanisms for managing open files:
+   * File descriptors:
+        - these are low-level, managed by OS
+        - Each open file is identified by a small integer
+         - For instance, `STDIN` is 0, `STDOUT` is 1
+
+   * File pointers:
+      - also known as streams or file handles,
+      - these are aimed/used for "regular" files
+      - A C language construct for easier working with file descriptors
+      - You use a pointer to a file structure (`FILE *`) as handle to a file.
+      - The file struct contains a file descriptor and a buffer.
+
+### Standard File Descriptors
+The operating system (OS) maintains for each process a table with *open file descriptors*, the so-called **file descriptor table**
+
+For each process in the system, the OS automatically opens the three standard file descriptors:
+
+|                 |   Name   |   File Descriptor   |   Default   |
+|-----------------|----------|---------------------|-------------|
+| Standard Input  | `stdin`  |   0                 |   keyboard  |
+| Standard Output | `stdout` |   1                 |   screen    |
+| Standard Error  | `stderr` |   2                 |   screen    |
+
 ## File System Tables
 
 * Process Control Block
@@ -115,10 +141,6 @@ void rewind(FILE *stream);
 int fclose(FILE *stream);
 ```
 
-
-## File Interfaces in C/Unix
-
-...
 
 
 ### A tale of Hierarchies
@@ -185,3 +207,6 @@ As such these directory entries have some standariozed meaning and purpose, e.g.
    - `/var`: a location to place varaible content, i.e. that might change frequently
      - `/var/log`: system logs
      
+
+## References
+   - Interesting reading, https://developer.ibm.com/tutorials/l-linux-filesystem/
