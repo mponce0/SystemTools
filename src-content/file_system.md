@@ -48,11 +48,35 @@ For a system administrator in a typical data center or supercomputer center, it 
 
 Moreover is possible that a computer system and its corresponding OS, operate on multiple and different types of file systems simulatenously.
 
+```
+   [system ]
+   [ OS/FS ]
+      |  \  \
+      |   \  +----(NAT-FS)
+      |    +------(alien-FS/external-drive)  
+(OS-native) 
+(filesystem)
+```
+
 Importantly, the "view" that the OS And FS have of the files and their associated data is quite different from the one that users or even programs and applications perceive.
-From an user perspective, the files, directories, etc. appear as a well organzied, hierarchically structured formation -- see the "Typical Linux FS Directory Structure".
-However, this another of the "nice" abstractions the OS in combination with the FS present to users and applications.
+From an user perspective, the files, directories, etc. appear as a well organized, hierarchically structured formation -- see the "Typical Linux FS Directory Structure".
+However, this is another of the "nice" abstractions and simplified view that the OS in combination with the FS present to users and applications.
 
 A more "realistic view" is the intertwiened relationships mantained among inodes, blocks and even sectors; with its corresponding mapping and distributed pointes and links.
+
+
+### Different type of filesystems:
+When talking specifically about the filesystem in terms of the characteristics of how the data and metadata is presented and layout in relation to the hardware, it should be noticed that there are many different types.
+The following is an incomplete, but still interesting and representative, list of the different type of filesystems: 
+   - FAT:  One of the oldest and simplest file systems. It was initially developed for MS-DOS and is still used in many removable storage devices. The two major versions of this system are FAT16 and FAT32. FAT uses a file allocation table to keep track of file locations on the disk. Used in Windows before NTFS was introduced.
+   - exFAT: The extended File Allocation Table (exFAT) builds on FAT32 and offers a lightweight system without all the overhead of NTFS.
+   - NTFS: The New Technology File System (NTFS) is the file system that modern Windows versions use by default.
+   - HFS+: The Hierarchical File System (HFS+) was the file system older Macs used by default.
+   - APFS: The proprietary Apple file system developed as a replacement for HFS+, with a focus on flash drives, SSDs, and encryption.
+   - ext2, ext3, & ext4: The extended file system (ext) was the first file system created specifically for the Linux kernel.
+
+   - GPFS: a General Parallel File System, proprietary FS developed by IBM for HPC or cluster-type systems.
+   - NAS: Network Attached Storage, involves a server connected to a network providing access to storage resources.
 
 
 ## File Interfaces in C/Unix
@@ -86,20 +110,6 @@ For each process in the system, the OS automatically opens the three standard fi
 * Process Control Block
 * System-Wide Open File Table
 * Vnode Table
-
-
-### Different type of fliesystems:
-When talking specifically about the filesystem in terms of the characteristics of how the data and metadata is presented and layout in relation to the hardware, it should be noticed that there are many different types.
-The following is an incomplete, but still interesting and representative, list of the different type of filesystems: 
-   - FAT:  One of the oldest and simplest file systems. It was initially developed for MS-DOS and is still used in many removable storage devices. The two major versions of this system are FAT16 and FAT32. FAT uses a file allocation table to keep track of file locations on the disk. Used in Windows before NTFS was introduced.
-   - exFAT: The extended File Allocation Table (exFAT) builds on FAT32 and offers a lightweight system without all the overhead of NTFS.
-   - NTFS: The New Technology File System (NTFS) is the file system that modern Windows versions use by default.
-   - HFS+: The Hierarchical File System (HFS+) was the file system older Macs used by default.
-   - APFS: The proprietary Apple file system developed as a replacement for HFS+, with a focus on flash drives, SSDs, and encryption.
-   - ext2, ext3, & ext4: The extended file system (ext) was the first file system created specifically for the Linux kernel.
-
-   - GPFS: a General Parallel File System, proprietary FS developed by IBM for HPC or cluster-type systems.
-   - NAS: Network Attached Storage, involves a server connected to a network providing access to storage resources.
 
 
 ## File Input/Ouput Operations (IOPs)
