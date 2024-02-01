@@ -152,6 +152,33 @@ The in-memory structures mantained by the OS are:
      | ...           |
 
 
+A generic and typical "relational" representation would be,
+
+```
+[[ Process i ]]
+|  Process Control Table  |
+|| File Descriptor Table ||
+||   0   stdin           ||
+||   1   stdout          ||
+||   2   stderr          ||            || System-Wide Open File Table ||
+||   3   data.txt        ||            ||   STDIN                     ||
+||   4   data2.dat       ||            ||   STDOUT                    ||
+||   5   sample.txt      ||            ||   STDERR                    ||
+|-------------------------|            ||   data.txt , offset, ...    ||
+                                       ||   data2.dat , offset, ...   ||
+[[ Process j ]]                        ||   sample.txt , offset, ...  ||
+|  Process Control Table  |            ||   data.bin , offset, ...    ||
+|| File Descriptor Table ||            ||   data2.dat , offset, ...   ||
+||   0   stdin           ||            ||   . . .                     ||
+||   1   stdout          ||            ||   . . .                     ||
+||   2   stderr          ||            ||   . . .                     ||
+||   3   data.bin        ||            |-------------------------------|
+||   4   data2.dat       ||
+|-------------------------|
+
+```
+
+
 ## File Input/Ouput Operations (IOPs)
 Now that we have a more "low level" view of what a file is for the OS and FS, we should clarify that accessing --i.e. reading and writing data from/to files-- is just not qhen single opeartion.
 Usually this process involves multiple operations, actions and manipulations from the OS.
