@@ -61,7 +61,7 @@ There are two main mechanisms for managing open files:
    * File descriptors:
         - these are low-level, managed by OS
         - Each open file is identified by a small integer
-         - For instance, `STDIN` is 0, `STDOUT` is 1
+        - For instance, `STDIN` is 0, `STDOUT` is 1
 
    * File pointers:
       - also known as streams or file handles,
@@ -88,7 +88,9 @@ For each process in the system, the OS automatically opens the three standard fi
 * Vnode Table
 
 
-### Different type of FS:
+### Different type of fliesystems:
+When talking specifically about the filesystem in terms of the characteristics of how the data and metadata is presented and layout in relation to the hardware, it should be noticed that there are many different types.
+The following is an incomplete, but still interesting and representative, list of the different type of filesystems: 
    - FAT:  One of the oldest and simplest file systems. It was initially developed for MS-DOS and is still used in many removable storage devices. The two major versions of this system are FAT16 and FAT32. FAT uses a file allocation table to keep track of file locations on the disk. Used in Windows before NTFS was introduced.
    - exFAT: The extended File Allocation Table (exFAT) builds on FAT32 and offers a lightweight system without all the overhead of NTFS.
    - NTFS: The New Technology File System (NTFS) is the file system that modern Windows versions use by default.
