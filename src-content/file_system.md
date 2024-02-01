@@ -228,7 +228,7 @@ IOPS are the most expensive operations of any program, hence one must deal with 
 The reason why that's the case is because the access to information storage in storage devices ia the slowest part in modern computers, even if one considers solid-state devices (SDDs) the typical time frame is going to be orders of magnitudes larger than the number of operations perform by the micro-processor.
 
 ```
-  speed    #cyles                                            capacity
+  speed    #cycles                                           capacity
   fastest   o(1)                    RX                        small       |
     ^       o(10)                 cache                         |         | on-chip
     |       o(100)              main memory                     |        || in-board
