@@ -1,14 +1,14 @@
 # The File System
 
-In a very basic way the **file system** can be considered as the components of the OS in charge of *managing and administrating files*.
+In a very simplified way the **file system** can be considered as the components of the OS in charge of *managing and administrating files and their corresponding metadata*.
 
 The file system defines how data is stored, accessed, and organized on storage devices.
 Different file systems have varying characteristics and are often specific to certain operating systems or devices.
 
 By now, we understand that a "file" is just not the typical construct we have about the data stored on it but also all the information related to it, such as its metadata, and more fundamental aspects like inodes, blocks, etc.
 
-In particular in Unix and Linux type OSes, a file plays a critical role: **any single resource in the comptuer system is described as a file**.
-This unique perspective makes this abstraction at the level of the OS, one of the most powerful one but also one of the most versatile and usefull one.
+In particular in Unix and Linux type OSes, a file plays a critical role: **any single resource in the computer system is described as a file**.
+This unique perspective makes this abstraction at the level of the OS, one of the most powerful ones but also one of the most versatile and usefull ones.
 
 In order for the OS to manage files, it employs two critical elements:
 
