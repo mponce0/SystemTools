@@ -52,10 +52,11 @@ Moreover is possible that a computer system and its corresponding OS, operate on
    [system ]
    [ OS/FS ]
       |  \  \
-      |   \  +----(NAT-FS)
-      |    +------(alien-FS/external-drive)  
+      |   \  +~~~~(NAT-FS)
+      |    +~~~~~~(alien-FS/external-drive)  
 (OS-native) 
 (filesystem)
+
 ```
 
 Importantly, the "view" that the OS And FS have of the files and their associated data is quite different from the one that users or even programs and applications perceive.
