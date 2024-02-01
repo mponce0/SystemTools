@@ -161,18 +161,18 @@ A generic and typical "relational" representation would be,
 ||   0   stdin           ||
 ||   1   stdout          ||
 ||   2   stderr          ||            || System-Wide Open File Table ||        || Vnode Table  ||
-||   3   data.txt        ||            ||   STDIN                     ||        || inode X, ... ||
-||   4   data2.dat       ||            ||   STDOUT                    ||        || inode Y, ... ||
-||   5   sample.txt      ||            ||   STDERR                    ||        || inode Z, ... ||
-|-------------------------|            ||   data.txt , offset, ...    ||        ||  . . .       ||
+||   3   data.txt        ||.......     ||   STDIN                     ||   :--->|| inode X, ... ||
+||   4   data2.dat       ||      :     ||   STDOUT                    ||   :    || inode Y, ... ||
+||   5   sample.txt      ||      :     ||   STDERR                    ||   :    || inode Z, ... ||
+|-------------------------|      ----->||   data.txt , offset, ...    ||...:    ||  . . .       ||
                                        ||   data2.dat , offset, ...   ||        ||  . . .       ||
 [[ Process j ]]                        ||   sample.txt , offset, ...  ||        ||  . . .       ||
-|  Process Control Table  |            ||   data.bin , offset, ...    ||        |----------------|
-|| File Descriptor Table ||            ||   data2.dat , offset, ...   ||
-||   0   stdin           ||            ||   . . .                     ||
-||   1   stdout          ||            ||   . . .                     ||
-||   2   stderr          ||            ||   . . .                     ||
-||   3   data.bin        ||            |-------------------------------|
+|  Process Control Table  |      :---->||   data.bin , offset, ...    ||        |----------------|
+|| File Descriptor Table ||      :     ||   data2.dat , offset, ...   ||
+||   0   stdin           ||      :     ||   . . .                     ||
+||   1   stdout          ||      :     ||   . . .                     ||
+||   2   stderr          ||      :     ||   . . .                     ||
+||   3   data.bin        ||......:     |-------------------------------|
 ||   4   data2.dat       ||
 |-------------------------|
 
