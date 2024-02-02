@@ -148,6 +148,12 @@ Special type of variable that can only store two possible values (aka binary), u
 ## Flags
    Special type of CLA that can only take pre-defined values, usually preceeded by '-' or '--'
 
+## TTY
+   Terminal Typewriter, refers to a connection to a machine done by a "real" (physical) terminal, e.g. when a user connects to the machine through its console.
+
+## PTS
+   Pseudo Terminal Session, refers to a remote connection done through a "virtual" (psuedo) terminal from a different location.
+   
 
 ## TUI
    Text User Interface, i.e. a user interface based on text or console.
