@@ -6,25 +6,25 @@ The different parts in this model are usually known as *segments*.
 
 
 ## The Address Space
-   * Code/Text:
+   * **Code/Text**:
        binary code loaded into this region to get executed
      
-       - ROData:
+       - **ROData**:
 		read-only data region for string literals; depending on the platform it can be located in the static data segment instead.
      
-   * Static Data:
+   * **Static Data**:
      	space for *evil* global variables and variables declared as `static`
 	Within the static data segment there are two additional sections:
 
-        - .data:
+        - **.data**:
 		global or static variables with predefined values that can be modified
-        - BSS segment:
+        - **BSS segment**:
 		global/static variables without predefined values
 
-   * Dynamic Data (Heap):
+   * **Dynamic Data (Heap)**:
     	space for dynamically allocated data strctures (e.g. using `malloc, calloc`)
 
-   * Stack:
+   * **Stack**:
         space for variables created in function calls, a function's parameters and funciton's local variables
      
 
