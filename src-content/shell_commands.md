@@ -139,6 +139,25 @@ STDOUT   1
 STDERR   2
 ```
 
+## Redirection and Piping
+One of the most powerful features of the shell is its ability to very easily combine the actions and results from multiple commands.
+It does this in two main ways:
+    - by *redirecting* the expected outpout from a command into a file, and then this file used as an intermediary for the input of a second command; or
+    - by directly shipping the output from the command into a second command, or commonly known as *piping*
+
+A couple of comments/observations should be made here:
+    1) you may recall and have noticed that most if not all of thew shell commands appear top be very "simple" and do one thing mostly, this is not random but by design, in this way commands should fcous in doing a very precise, concrete, well-define action (do it right!) and then these "simple" commands can be combined to lead to a more complex action;
+    2) again, everything is a file in Linux and files are manipulated so easily and powerfully at the level of the shell, that it couldn't be clearer the critical role they have in the OS abstraction;
+    3) having said that one must be careful when "hammering" file IOPs, shall we recall the IOPs herarchy and penalties we incurre by hiotting the FS to frequently -- for this very same reason, communicating directly between commands is much efficient and preferable whenever possible, i.e. piping!
+
+|  Redirection/Pipe |    Action    |    Example    |
+|-----------------|-----------------------------------------|-------------------------|
+| `cmd > file`    |    redirect standar output to a file    |    `ls -l > listing`    |
+| `cmd >> file`   |    append standar output to a file      |    `ls -l >> listing`   |
+|  `cmd < file`   |    use file as input to cmd             |                         |
+| `cmd1 \| cmd2`  |    pipe (pass) standar output from cmd1 to cmd2    |    `ls -l | wc -l`    |
+    
+
 ## Refs.
    * https://www.kernel.org/doc/man-pages/
    * https://man7.org/tlpi/index.html
