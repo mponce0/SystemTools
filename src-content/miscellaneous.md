@@ -1,4 +1,6 @@
-# ESCape Codes
+# Miscellaneous
+
+## ESCape Codes
 
 | ESCape code     |   action                            |
 |-----------------|-------------------------------------|
@@ -6,3 +8,4 @@
 | "\033[H"        | position cursor in top-left corner  |
 
 * see also "ANSI-color-codes.h"
+---
