@@ -25,7 +25,7 @@ The typical way to invoque these commands is using the command's name followed
 by arguments to this program, usually known as command line arguments (CLA)
 which are separated by "spaces".
 
-## Generic Way to Execute Commands in the shell
+### Generic Way to Execute Commands in the shell
 ```sh
    CMD [arg1] [arg2] [...] arg_i arg_ii ...
 ```
@@ -51,7 +51,7 @@ Moreover, because the shell runs an interpreter to process these commands, it is
 This is also known as *shell scripting*.
 
 
-# Commands
+## Shell Commands
 
 ```sh
 # files/directories
@@ -116,7 +116,7 @@ vi
 See [table of shell commands](shell_commands_table.md) and [list of tools/utilities](tools.md) for further details.
 
 
-## Special Filenames
+### Special Filenames
 ```sh
 .     # current directory
 ..    # upper (parent) directory
@@ -124,7 +124,7 @@ See [table of shell commands](shell_commands_table.md) and [list of tools/utilit
 ~     # user's home directory
 ```
 
-## Special files
+### Special files
 ```sh
 /dev/shm    # RAMdisk
 /dev/null
@@ -132,14 +132,14 @@ See [table of shell commands](shell_commands_table.md) and [list of tools/utilit
 /proc/cpuinfo
 ```
 
-## File Descriptors
+### File Descriptors
 ```sh
 STDIN    0
 STDOUT   1
 STDERR   2
 ```
 
-# Refs.
+## Refs.
    * https://www.kernel.org/doc/man-pages/
    * https://man7.org/tlpi/index.html
    * http://linuxcommand.org
