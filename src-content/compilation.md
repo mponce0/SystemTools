@@ -6,8 +6,11 @@
    - deals with pre-processor instructions, syntax checking, etc.
 
 * Compiler
-   - conversion into binary/machine code
-     
+   - conversion into assembly code 
+
+* Assembly
+   - conversion into binary/machine code (known as objkect file, `".o"`)
+
 * Linker
    - link with external libraries
 
