@@ -78,17 +78,17 @@ chown  # change ownership
 echo
 
 # display text files
-cat
-more
-less
+cat    # print file contents
+more    # scroll through file
+less    # scroll through file
 
-head
-tail
+head    # print first lines of a file
+tail    # print last lines of a file
 
 # compare differences
-cmp
-diff
-vimdiff
+cmp    # compare bionary files
+diff    # compare text files
+vimdiff    # compare text files with vi-interface
 
 ##
 
@@ -96,10 +96,18 @@ vimdiff
 hexdump
 od
 
+file    # determine type of file
+
+which    # locate programs
+whereis    # find files associated to commands
+locate    #
+find    # search for files
+
 ##
 
-wc
-awk
+wc    # count characters, lines, words
+awk    # 
+sed    #
 
 ##
 
