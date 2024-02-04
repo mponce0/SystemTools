@@ -1,4 +1,4 @@
-# Commands
+## Shell Commands
    * Type:
          indicates the command is a standard or basic one (**std**), or an enhancement or extra features to the basic shell commands (**xtra**) 
    * Category:
