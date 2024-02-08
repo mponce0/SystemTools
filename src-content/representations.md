@@ -66,10 +66,12 @@ This mostly true in the case of computer representations, but with the considera
 
   * how many bytes are used to represent a particular data type, e.g. an `int`-type can be represented using 4 or 8 bytes depending on
     the hardware architecture and OS; 4 bytes is used by 32-bits architectures/OSes, 8 bytes is used by 64-bits architectures/OSes.
-    
+
     > 32-bits = 4 bytes * 8 (bits/byte)
-    > 64-bits = 8 bytes * 8 (bits/byte)
-    
+  
+    > 64-bits = 8 bytes * 8 (bits/byte)   
+
+ 
   * the order in which we represent the data, i.e. whether we write first the least or most significant figure. This known as *endianness*.
     It turns out that different machines and OSes at some point were using different convensions and this has percolated until nowadays,
     seeing the most typical difference when communicating information between machines where the network protocols use big-endian vs most of our modern computer systems that use little-endian.
