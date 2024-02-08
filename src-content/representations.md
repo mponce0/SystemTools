@@ -6,7 +6,7 @@ Sometimes this is actually done in bits, or collection of bits: bytes, either in
 As users we rarely interact with this form or representation, but we should still be aware of this in particular when considering aspects of the OS and the computer system.
 
 For instance, when we consider characters this are represented using the so-called "American Standard Code for Information Interchange", in which each character or symbol gets assign a value represented by a 1 byte long integer number.
-The ASCII convention mps characters to this values.
+The ASCII convention maps characters to these values.
 For instance,
 ```sh
 30      31      32      33 !    34 "    35 #    36 $    37 %    38 &    39 '
@@ -33,10 +33,21 @@ Similarly if we have numerical value in one basis, its representation will chang
 
 For example, the number 77 in base-10 can be written as 01001101 in base-2.
 
-As a general observation, a numerical represntation in base-X, will have 0...X-1 possible digits.
+As a general observation, a numerical representation in base-X, will have 0...X-1 possible digits.
 E.g.
   - base-10: 0,1,2,3,4,5,6,7,8,9
   - base-2: 0,1
   - base-7: 0,1,2,3,4,5,6
   - base-16: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F (here A->10, B->11, C->12, D->13, E->14, and F->15).
+
+
+In order to see how the bionary representation "01001101" in base-2 corresponds to 77 in base-10, we can notice the following,
+
+```
+     0   1   0   0   1   1   0   1
+     |   |   |   |   |   |   |   |
+    2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0
+   =128 =64 =32 =16  =8  =4  =2  =1
+==> (0*128) + (1*64) + (0*32) + (0*16) + (1*8) + (1*4) + (0*2) + (1*1) = 64+8+4+1 = 77
+```
 
