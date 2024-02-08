@@ -39,12 +39,12 @@ Similarly if we have numerical value in one basis, its representation will chang
 
 For example, the number 77 in base-10 can be written as 01001101 in base-2.
 
-As a general observation, a numerical representation in base-X, will have 0...X-1 possible digits.
+As a general observation, a numerical representation in base-X, will have `0,...,X-1` possible digits.
 E.g.
-  - base-10: 0,1,2,3,4,5,6,7,8,9
-  - base-2: 0,1
-  - base-7: 0,1,2,3,4,5,6
-  - base-16: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F (here A->10, B->11, C->12, D->13, E->14, and F->15).
+  - base-10: `0,1,2,3,4,5,6,7,8,9`
+  - base-2: `0,1`
+  - base-7: `0,1,2,3,4,5,6`
+  - base-16: `0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F` (here `A`->10, `B`->11, `C`->12, `D`->13, `E`->14, and `F`->15).
 
 
 In order to see how the binary representation "01001101" in base-2 corresponds to 77 in base-10, we can notice the following,
@@ -64,9 +64,13 @@ In order to see how the binary representation "01001101" in base-2 corresponds t
 In general, is conicbable that after indicating the basis for the representation of a numerical value this would be uniquely determined.
 This mostly true in the case of computer representations, but with the consideration of the following:
 
-  * how many bytes are used to represent a particular data type, e.g. `int`s can be 4 or 8 bytes dependeing on the hardware architecture and OS; 4 bytes is used by 32-bits architectures/OSes, 8 bytes is uused by 64-bits architectures/OSes.
+  * how many bytes are used to represent a particular data type, e.g. an `int`-type can be represented using 4 or 8 bytes depending on
+    the hardware architecture and OS; 4 bytes is used by 32-bits architectures/OSes, 8 bytes is used by 64-bits architectures/OSes.
+    
     > 32-bits = 4 bytes * 8 (bits/byte)
     > 64-bits = 8 bytes * 8 (bits/byte)
+    
   * the order in which we represent the data, i.e. whether we write first the least or most significant figure. This known as *endianness*.
-    It turns out that different machines and OSes at some point were using different convensions and this has percolated until nowadays, seeing the most typical difference when communicating information between machines where the network protocols use big-endian vs most of our modern computer systems that use little-endian.
+    It turns out that different machines and OSes at some point were using different convensions and this has percolated until nowadays,
+    seeing the most typical difference when communicating information between machines where the network protocols use big-endian vs most of our modern computer systems that use little-endian.
  ---
