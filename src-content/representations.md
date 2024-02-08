@@ -47,7 +47,7 @@ E.g.
   - base-16: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F (here A->10, B->11, C->12, D->13, E->14, and F->15).
 
 
-In order to see how the bionary representation "01001101" in base-2 corresponds to 77 in base-10, we can notice the following,
+In order to see how the binary representation "01001101" in base-2 corresponds to 77 in base-10, we can notice the following,
 
 ```
      0   1   0   0   1   1   0   1
@@ -57,3 +57,7 @@ In order to see how the bionary representation "01001101" in base-2 corresponds 
 ==> (0*128) + (1*64) + (0*32) + (0*16) + (1*8) + (1*4) + (0*2) + (1*1) = 64+8+4+1 = 77
 ```
 
+> Exercise write a program to convert representation between two given numerical bases.
+
+
+ ---
