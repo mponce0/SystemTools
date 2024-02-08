@@ -27,7 +27,7 @@ For instance,
 120 x   121 y   122 z   123 {   124 |   125 }   126 ~   127    ⏎
 ```
 
-> Exercise: Write a C program capable of generate this ASCII table.
+> *Exercise:* Write a C program capable of generate this ASCII table.
 
 For instance, the character 'M' is assigned the value 77 (in decimal representation, i.e. using base 10).
 
@@ -57,7 +57,7 @@ In order to see how the binary representation "01001101" in base-2 corresponds t
 ==> (0*128) + (1*64) + (0*32) + (0*16) + (1*8) + (1*4) + (0*2) + (1*1) = 64+8+4+1 = 77
 ```
 
-> Exercise write a program to convert representation between two given numerical bases.
+> *Exercise:* write a program to convert representation between two given numerical bases.
 
 
  ---
