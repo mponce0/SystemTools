@@ -3,10 +3,16 @@
 At low level, computers can only store and manipulate information in binary format.
 Sometimes this is actually done in bits, or collection of bits: bytes, either in plain binary format or equivalent representations such as hexadecimal (i.e. base-16 representation).
 
+This is quite natural for computers as each bit can hold two possible values: a 0 or a 1, in other words, electricity flowing or not in electronic circuit.
+Bits are grouped in set of 8 to form a *byte*. I.e. 1 byte is formed by 8 bits. 
+
 As users we rarely interact with this form or representation, but we should still be aware of this in particular when considering aspects of the OS and the computer system.
 
-For instance, when we consider characters this are represented using the so-called "American Standard Code for Information Interchange", in which each character or symbol gets assign a value represented by a 1 byte long integer number.
+For instance, when we consider characters (such as, the type `char` and its collections, e.g. strings)
+these are represented using the so-called **"American Standard Code for Information Interchange"** (ASCII),
+in which each character or symbol gets assign a value represented by a 1 byte long integer number.
 The ASCII convention maps characters to these values.
+
 For instance,
 ```sh
 30      31      32      33 !    34 "    35 #    36 $    37 %    38 &    39 '
