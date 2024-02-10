@@ -29,7 +29,7 @@ int fclose(FILE *stream);
 ```
 
 ### Text/ASCII I/O
-```
+```C
 // Input:
 int fscanf(FILE *stream, const char *format,...);
 char *fgets(char *s, int size, FILE *stream);
