@@ -45,5 +45,10 @@ void rewind(FILE *stream);
 ```
 
 ### Binary I./o
+```C
+// reading (input)
+size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);
 
-
+// writing (output)
+size_r fwrite(const void *ptr, size_t size, FILE *stream);
+```
