@@ -180,49 +180,6 @@ A generic and typical "relational" representation would be,
 ```
 
 
-## File Input/Ouput Operations (IOPs)
-Now that we have a more "low level" view of what a file is for the OS and FS, we should clarify that accessing --i.e. reading and writing data from/to files-- is just not qhen single opeartion.
-Usually this process involves multiple operations, actions and manipulations from the OS.
-
-### Basic I/O opearations
-   - Finding a file (`ls`)
-     - Check if that file exists, read metadata (file size, date stamp etc.)
-   - Opening a file:
-      Check if that file exists, see if opening the file is allowed, possibly create it, find the block that has the (first part of) the file system.
-   - Reading a file
-       Position to the right spot, read a block, take out right part
-   - Writing to a file:
-      Check where there is space, position to that spot, write the block. Repeated if the data read/written spans multiple blocks.
-   - Move the file pointer (*seek*):
-      File system must check were on disk the data is.
-   - Close the file.
-
-
-### Basic File I/O Functions (`stdio.h`)
-
-```C
-// Open
-FILE *fopen(const char *path, const char *mode);
-
-// Input:
-int fscanf(FILE *stream, const char *format,...);
-char *fgets(char *s, int size, FILE *stream);
-char fgetc(FILE *stream);
-
-// Output:
-int fprintf(FILE *stream, const char *format,...);
-int fputs(const char *str, FILE *stream);
-
-// Position cursor:
-int fseek(FILE *stream, long int offset, int whence);
-void rewind(FILE *stream);
-
-// Close
-int fclose(FILE *stream);
-```
-
-
-
 ### A Tale of Hierarchies
 IOPS are the most expensive operations of any program, hence one must deal with them with caution and in most the cases attempting to minimize them.
 The reason why that's the case is because the access to information storage in storage devices ia the slowest part in modern computers, even if one considers solid-state devices (SDDs) the typical time frame is going to be orders of magnitudes larger than the number of operations perform by the micro-processor.
