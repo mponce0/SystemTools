@@ -52,3 +52,11 @@ size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);
 // writing (output)
 size_r fwrite(const void *ptr, size_t size, FILE *stream);
 ```
+
+
+## I/O Performance
+Any IOP is always going to be the slowest part of any code.
+The reason of why this is the case is simple: IOPs mostly involve interactions with hardware which in its main form is constituted by mechanical parts, e.g. HDD.
+Hence any mechanical interaction is always going to be substanatially slower than any electronic interactions.
+In addition to that, there is the fact that if we are "forcing" a type conversion, e.g. if we are trying to save data (which is usually stored as binary) in memory as "text/ASCII" represented data, then there is a explicit conversion that must be done, involving further cycles of the CPU fully dedicate to these conversions.
+
