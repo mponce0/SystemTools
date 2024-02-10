@@ -1,9 +1,9 @@
 
-## File Input/Ouput Operations (IOPs)
+# File Input/Ouput Operations (IOPs)
 Now that we have a more "low level" view of what a file is for the OS and FS, we should clarify that accessing --i.e. reading and writing data from/to files-- is just not one single operation.
 Usually this process involves multiple operations, actions and manipulations coordinate by and with the OS.
 
-### Basic I/O opearations
+## Basic I/O operations
    - Finding a file (`ls`)
      - Check if that file exists, read metadata (file size, date stamp etc.)
    - Opening a file:
@@ -17,7 +17,7 @@ Usually this process involves multiple operations, actions and manipulations coo
    - Close the file.
 
 
-### Basic File I/O Functions (`stdio.h`)
+## Basic File I/O Functions (`stdio.h`)
 
 ```C
 // Open
@@ -28,7 +28,7 @@ FILE *fopen(const char *path, const char *mode);
 int fclose(FILE *stream);
 ```
 
-### Text/ASCII I/O
+## Text/ASCII I/O
 ```C
 // Input:
 int fscanf(FILE *stream, const char *format,...);
@@ -44,7 +44,7 @@ int fseek(FILE *stream, long int offset, int whence);
 void rewind(FILE *stream);
 ```
 
-### Binary I/O
+## Binary I/O
 ```C
 // reading (input)
 size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);
