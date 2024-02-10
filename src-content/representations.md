@@ -1,4 +1,4 @@
-## Data Representation
+# Data Representation
 
 At low level, computers can only store and manipulate information in binary format.
 Sometimes this is actually done in bits, or collection of bits: bytes, either in plain binary format or equivalent representations such as hexadecimal (i.e. base-16 representation).
@@ -57,12 +57,12 @@ In order to see how the binary representation "01001101" in base-2 corresponds t
 ==> (0*128) + (1*64) + (0*32) + (0*16) + (1*8) + (1*4) + (0*2) + (1*1) = 64+8+4+1 = 77
 ```
 
-> *Exercise:* write a program to convert representation between two given numerical bases.
+> *Exercise:* write a program to convert representations between two given numerical bases.
 
 
 ## Representation Dependencies
 In general, is conicbable that after indicating the basis for the representation of a numerical value this would be uniquely determined.
-This mostly true in the case of computer representations, but with the consideration of the following:
+This is mostly true in the case of computer representations, but taking into consideration the following:
 
   * how many bytes are used to represent a particular data type, e.g. an `int`-type can be represented using 4 or 8 bytes depending on
     the hardware architecture and OS; 4 bytes is used by 32-bits architectures/OSes, 8 bytes is used by 64-bits architectures/OSes.
@@ -75,4 +75,22 @@ This mostly true in the case of computer representations, but with the considera
   * the order in which we represent the data, i.e. whether we write first the least or most significant figure. This known as *endianness*.
     It turns out that different machines and OSes at some point were using different convensions and this has percolated until nowadays,
     seeing the most typical difference when communicating information between machines where the network protocols use big-endian vs most of our modern computer systems that use little-endian.
- ---
+ 
+---
+
+### Example 
+Let's consider the value 10 (in base-10), and see how many digits are needed in different bases to represent such a value.
+
+```
+1 byte -> 8 bits: | | | | | | | | |  => 2^8 possible values = 256
+             bit#  0 1 2 3 4 5 6 7
+
+          2 hexadecimals: | | |  => 16^2 = 256
+
+
+e.g.
+      10 (base-10) ~ 01010000 (base-2) ~ 0A (base-16)
+
+```
+
+---
