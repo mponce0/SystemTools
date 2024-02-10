@@ -85,12 +85,17 @@ Let's consider the value 10 (in base-10), and see how many digits are needed in 
 1 byte -> 8 bits: | | | | | | | | |  => 2^8 possible values = 256
              bit#  0 1 2 3 4 5 6 7
 
-          2 hexadecimals: | | |  => 16^2 = 256
-
+       -> 2 hexadecimals: | | |  => 16^2 = 256
 
 e.g.
       10 (base-10) ~ 01010000 (base-2) ~ 0A (base-16)
 
 ```
 
+If we also consider the order in which we want to represent this "digits", then we can see that,
+```
+* little-endian:  10 (base-10) ~ ~ 01010000 (base-2) ~ 0A (base-16)
+
+* big-endian: ~ 01 (base-10) ~ 00001010 (base-2) ~ A0 (base-16)
+```
 ---
