@@ -50,7 +50,7 @@ void rewind(FILE *stream);
 size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);
 
 // writing (output)
-size_r fwrite(const void *ptr, size_t size, FILE *stream);
+size_t fwrite(const void *ptr, size_t size, FILE *stream);
 ```
 
 
