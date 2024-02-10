@@ -44,7 +44,7 @@ int fseek(FILE *stream, long int offset, int whence);
 void rewind(FILE *stream);
 ```
 
-### Binary I./o
+### Binary I/O
 ```C
 // reading (input)
 size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);
