@@ -9,7 +9,7 @@
    - conversion into assembly code 
 
 * Assembly
-   - conversion into binary/machine code (known as objkect file, `".o"`)
+   - conversion into binary/machine code (known as object file, `".o"`)
 
 * Linker
    - link with external libraries
@@ -40,9 +40,9 @@
 
 * Example
   ```sh
-    # Compilation of the source code "myProg.c"  using the C standar '99: --std=c99,
+    # Compilation of the source code "myProg.c"  using the C standard '99: --std=c99,
     # enabling warning and pushing them to errors: -Wall -Werror,
-    # wiht optimization level 2: -O2,
+    # with optimization level 2: -O2,
     # linking with the math library: -lm,
     # generating an executable named "myExec": -o myExec
     gcc --std=c99 -Wall -Werror -O2 myProg.c  -lm  -o myExec

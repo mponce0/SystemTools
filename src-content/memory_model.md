@@ -22,10 +22,10 @@ The different parts in this model are usually known as *segments*.
 		global/static variables without predefined values
 
    * **Dynamic Data (Heap)**:
-    	space for dynamically allocated data strctures (e.g. using `malloc, calloc`)
+    	space for dynamically allocated data structures (e.g. using `malloc, calloc`)
 
    * **Stack**:
-        space for variables created in function calls, a function's parameters and funciton's local variables
+        space for variables created in function calls, a function's parameters and function's local variables
      
 
 ```

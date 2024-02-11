@@ -1,5 +1,5 @@
 
-# File Input/Ouput Operations (IOPs)
+# File Input/Output Operations (IOPs)
 Now that we have a more "low level" view of what a file is for the OS and FS, we should clarify that accessing --i.e. reading and writing data from/to files-- is just not one single operation.
 Usually this process involves multiple operations, actions and manipulations coordinate by and with the OS.
 
@@ -57,6 +57,6 @@ size_t fwrite(const void *ptr, size_t size, FILE *stream);
 ## I/O Performance
 Any IOP is always going to be the slowest part of any code.
 The reason of why this is the case is simple: IOPs mostly involve interactions with hardware which in its main form is constituted by mechanical parts, e.g. HDD.
-Hence any mechanical interaction is always going to be substanatially slower than any electronic interactions.
+Hence any mechanical interaction is always going to be substantially slower than any electronic interactions.
 In addition to that, there is the fact that if we are "forcing" a type conversion, e.g. if we are trying to save data (which is usually stored as binary) in memory as "text/ASCII" represented data, then there is a explicit conversion that must be done, involving further cycles of the CPU fully dedicate to these conversions.
 

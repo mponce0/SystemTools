@@ -2,9 +2,9 @@
 
 `vi` or `vim` is a powerful, terminal-based editor.
 Widely used among programmers, sys.admins and power-users, offers
-the ability of achieving complex tasks all based on keyboard interations.
+the ability of achieving complex tasks all based on keyboard interactions.
 
-For begginners it may offer a bit of a step learning curve.
+For beginners it may offer a bit of a steep learning curve.
 We compile here some of the most useful commands, as well as,
 some worth-reading references at the bottom of this document.
 
@@ -23,7 +23,7 @@ some worth-reading references at the bottom of this document.
 ## Basic commands
 While being in command-mode, the following combination of key-strokes will generate the corresponding action.
 
-The commands beggining with `:` needs to be finalized with hitting "Enter".
+The commands beginning with `:` needs to be finalized with hitting "Enter".
 
 
 | keys combination	|	command/action			|
@@ -35,14 +35,14 @@ The commands beggining with `:` needs to be finalized with hitting "Enter".
 | `:wq` / `ZZ` / `:x`  | saves changes to current file and exists  |
 |	`:q!`		| quits without saving the changes to the file	|
 | **Movement**		|
-|	`0`  		| goes to the beggining of the current line	|
+|	`0`  		| goes to the beginning of the current line	|
 |	`$`  		| goes to the end of the current line	|
 |	`:$` 		| goes to end of the file	|
 |	`:1` 		| goes to line #1	|
 |	`:N` 		| goes to line #*N*	|
 |	`$`  		| goes to the end of the current line	|
 |	`w`		| goes to next word	|
-|	`b`		| goes to the beggining of the word	|
+|	`b`		| goes to the beginning of the word	|
 |	`e`		| goes to the end of the word	|
 | **Edition**		|
 |	`i` 		| inserts before cursor |
@@ -102,7 +102,7 @@ usually located in the user's homedir named `.vimrc`.
 
 
 ### Plugins
-`vi` has a large set of contributed *plugins* which allows for a highly cutomizable experience.
+`vi` has a large set of contributed *plugins* which allows for a highly customizable experience.
 Plugins will be installed in a `.vim` sub-directory within the user's home-dir.
 Installation is usually done via a "package manager" and there are a few different ones.
 
@@ -178,7 +178,7 @@ See more plugins at, https://vimawesome.com
 
       `:%s/.$//`
 
-   - remove ^M can be also achieve more precisely by searching for the "^M" sequence, however it ^M should be written as the combination of `CTRL-V` __and__ `CTRL-M`, i.e. pressing `CTRL-V-M` simulatenously
+   - remove ^M can be also achieve more precisely by searching for the "^M" sequence, however it ^M should be written as the combination of `CTRL-V` __and__ `CTRL-M`, i.e. pressing `CTRL-V-M` simultaneously
 
        `:%s/^M//g`
 
@@ -205,7 +205,7 @@ See more plugins at, https://vimawesome.com
 
 
 
-## Interesting Readings and Futher Resources:
+## Interesting Readings and Further Resources:
 ### Articles:
   * https://www.redhat.com/sysadmin/introduction-vi-editor
   * https://www.redhat.com/sysadmin/vim-power-commands

@@ -14,37 +14,37 @@ There will be two main elements playing critical and fundamental roles in these 
 
 ## Operating System
 An *operating system* (OS) is a software implementation that makes possible the utilization of the specific hardware where the OS runs.
-It has critical responsibilites in making the hardware useful and usable by pother programs, users, etc.
+It has critical responsibilities in making the hardware useful and usable by other programs, users, etc.
 In a very general way, it is an abstraction layer sitting directly on top of the hardware and all its complexities and peculiarities.
 By doing this it makes the hardware accessible to other programs, applications, etc.
 The OS is also a resource manager as it administrates resource allocations, operations management, etc. 
-It oversees the propper and appropiate utilization and assignation of the system resources to programs, agents, applicatiopns, users, etc.
+It oversees the proper and appropriate utilization and assignation of the system resources to programs, agents, applications, users, etc.
 
 ## Linux
 As a very special type, and likely the most powerful OS implementation, we will focus on the Unix/Linux type.
 
-In its very begginings, originated as the Unix OS, as the decades passed it evolved into its "modern" conception of the Liunx OS version.
-Although the principles and philosophies remain qutie similar among these two distant variants.
+In its very beginnings, originated as the Unix OS, as the decades passed it evolved into its "modern" conception of the Linux OS version.
+Although the principles and philosophies remain quite similar among these two distant variants.
 Unix/Linux has a very rich history, and perhaps more interestingly initial conceived by the 1970s already as an OS that is:
-  - multi-user, i.e. can support and handle mutiple iusers simultaneously
+  - multi-user, i.e. can support and handle multiple users simultaneously
   - multi-process, i.e. can run and alternate among multiple programs/tasks/etc.
-  - offers access control and managament of the system (hardware) resources.
+  - offers access control and management of the system (hardware) resources.
 
 One of the most interesting abstractions that the Linux OS does is to treat every single computer resource, including hardware components as **files**.
-This has profound imnplications, in terms of the simplicity with which the OS can deal and manage devices as well as the powerful control and oversee the OS has.
-However as we will discuss when talking about the FS, "files" won't just be the simple interpretation we may have about files but a much richer and more indepth consideration. 
+This has profound implications, in terms of the simplicity with which the OS can deal and manage devices as well as the powerful control and oversee the OS has.
+However as we will discuss when talking about the FS, "files" won't just be the simple interpretation we may have about files but a much richer and more in-depth consideration. 
 
-* The Linux OS is a complex and vast software system, with multiple functionalities, systems and moving parts that intertwien their scopes and dynamnics.
+* The Linux OS is a complex and vast software system, with multiple functionalities, systems and moving parts that intertwine their scopes and dynamics.
 
 
 ### Open Source
-Another core principle of the Linux philosphy, or design principles, is that Linux is a *free* and *open source* initiative.
+Another core principle of the Linux philosophy, or design principles, is that Linux is a *free* and *open source* initiative.
 I.e. that the source code, the actual programs that compose the OS are free to use and freely accessible to anyone and everyone.
-One can just simply obtan the source code of the OS, look at it, modify it, improve, change it, adapt it to its own needs and preferences.
+One can just simply obtain the source code of the OS, look at it, modify it, improve, change it, adapt it to its own needs and preferences.
 
 This is one of the core principles at which Linux supporters and adopters adhere to.
 It has profound implications from the philosophical stand-point but also from pragmatical aspects as well.
-As this implies that the OS source code can be inspect, reviewed by anypne willing to... interestingly enough this has become one of the strongest and most appealing features for many from the Linux OS (myself included!), of course in addition to its robustness, design principles, core secuity aspects, etc.
+As this implies that the OS source code can be inspect, reviewed by anyone willing to... interestingly enough this has become one of the strongest and most appealing features for many from the Linux OS (myself included!), of course in addition to its robustness, design principles, core security aspects, etc.
 
 
 
@@ -58,7 +58,7 @@ The main components in the Linux OS are:
 ### Kernel
 The kernel of the OS, is the core of the OS, where the OS implementation performs and deploys the basic functionalities, abstractions and simplifications of the hardware architecture where its has been installed.
 
-The kernel of the OS, being this basal layer is really complex and complicated, having to serve multiple uses and manaqing multiple resources. 
+The kernel of the OS, being this basal layer is really complex and complicated, having to serve multiple uses and managing multiple resources. 
 
 An integrated view of this can be seen in the following resources:
  - https://makelinux.github.io/kernel/diagram/
@@ -67,22 +67,22 @@ An integrated view of this can be seen in the following resources:
 
 ### Shell
 The shell is another component of the OS, interfacing between the users, programs, applications and the actual kernel functionalities.
-Mosly focusing in the interactions with the FS, and further commands or tools, the shell serves as an extension of the OS's kernel.
-The shell can be used to operate with files and the file system similar to what a "file exporer" graphical-user interface but with much more fine-control, precision and posible automation of the tasks that need to be peformed. 
+Mostly focusing in the interactions with the FS, and further commands or tools, the shell serves as an extension of the OS's kernel.
+The shell can be used to operate with files and the file system similar to what a "file explorer" graphical-user interface but with much more fine-control, precision and possible automation of the tasks that need to be performed. 
 
 
 ## Variants
 Not only Linux can be seen as a "variant" or branching from the original "Unix" distribution, but there are currently several more branches co-existing on modern computers.
-For instance, MacOS was originated from a Linux version known as "BSD", Android --the famous mobile OS-- is basicslly a Linux mobile version.
-Moreover there are many more versions of propper Linux OSes: Arch64, Debian, Ubuntu, SuSe, RedHat, etc.
+For instance, MacOS was originated from a Linux version known as "BSD", Android --the famous mobile OS-- is basically a Linux mobile version.
+Moreover there are many more versions of proper Linux OSes: Arch64, Debian, Ubuntu, SuSe, RedHat, etc.
 
 [![Simplified History of the Unix/Linux OS Development](https://en.wikipedia.org/wiki/History_of_Unix#/media/File:Unix_history-simple.svg)](https://en.wikipedia.org/wiki/History_of_Unix#/media/File:Unix_history-simple.svg)
 
-Considering all the possible variations and platforms were Linux can run, it is without any doubts the most popular OS accross many different platforms and architectures: used in personal computers, workstations, latpops, mobile devices, and in particular with absolute majority in data centers and super-computer centers.
+Considering all the possible variations and platforms were Linux can run, it is without any doubts the most popular OS across many different platforms and architectures: used in personal computers, workstations, laptops, mobile devices, and in particular with absolute majority in data centers and super-computer centers.
 
 
 ## Distros
-A typical way to differentiate Linux OS "falvours" is by composing different 'distributions' or "distros".
-Linux OS is so modular and flexible, that one can create its very own personalized and customized "flavour" of Linux by combining different elements of the OS.
+A typical way to differentiate Linux OS "flavors" is by composing different 'distributions' or "distros".
+Linux OS is so modular and flexible, that one can create its very own personalized and customized "flavor" of Linux by combining different elements of the OS.
 The main elements needed are:  the Linux kernel, shell utilities, a desktop environment, a package manager, etc.
 

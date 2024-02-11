@@ -8,19 +8,19 @@ Different file systems have varying characteristics and are often specific to ce
 By now, we understand that a "file" is just not the typical construct we have about the data stored on it but also all the information related to it, such as its metadata, and more fundamental aspects like inodes, blocks, etc.
 
 In particular in Unix and Linux type OSes, a file plays a critical role: **any single resource in the computer system is described as a file**.
-This unique perspective makes this abstraction at the level of the OS, one of the most powerful ones but also one of the most versatile and usefull ones.
+This unique perspective makes this abstraction at the level of the OS, one of the most powerful ones but also one of the most versatile and useful ones.
 
 In order for the OS to manage files, it employs two critical elements:
 
 ## Blocks
    - abstractions of data on the filesystem
-   - have a fixed size, detemrined at the time the filesystem is created
-   - the *block size* determines how many butes are allocated to each block
+   - have a fixed size, determined at the time the filesystem is created
+   - the *block size* determines how many bytes are allocated to each block
    - they represent the *minimal unit* of information on the specific filesystem
    - In general, block sizes are 1 KB, 2 KB, or 4 KB for 32-bit systems; and 8 KB is also available on 64-bit systems.
 
 ## Inodes (index node)
-  - data strcture used to map blocks to physical locations in the hardware storage device (e.g. a disk or hardrive)
+  - data structure used to map blocks to physical locations in the hardware storage device (e.g. a disk or hard-drive)
   - every single file gets assigned an inode
   - in some way one could think about them as being analogous to pointers
   - when a filesystems runs out of inodes, no new files can be created until existing files are deleted
@@ -42,11 +42,11 @@ In order for the OS to manage files, it employs two critical elements:
 ```
 ---
 
-We should mention the distintion among the "File System" as a component of the OS, and the filesystem actually related to specific storage devices.
-This distintion plays a critical role, when in reality you speak to different professional from different fields.
-For a system administrator in a typical data center or supercomputer center, it is qwuite likely that the FS is referring to the actual hardware and supporting drivers or firmware in charge of making it functional and accessible to the OS.
+We should mention the distinction among the "File System" as a component of the OS, and the filesystem actually related to specific storage devices.
+This distinction plays a critical role, when in reality you speak to different professional from different fields.
+For a system administrator in a typical data center or supercomputer center, it is quite likely that the FS is referring to the actual hardware and supporting drivers or firmware in charge of making it functional and accessible to the OS.
 
-Moreover is possible that a computer system and its corresponding OS, operate on multiple and different types of file systems simulatenously.
+Moreover is possible that a computer system and its corresponding OS, operate on multiple and different types of file systems simultaneously.
 
 ```
    [system ]
@@ -63,7 +63,7 @@ Importantly, the "view" that the OS And FS have of the files and their associate
 From an user perspective, the files, directories, etc. appear as a well organized, hierarchically structured formation -- see the "Typical Linux FS Directory Structure".
 However, this is another of the "nice" abstractions and simplified view that the OS in combination with the FS present to users and applications.
 
-A more "realistic view" is the intertwiened relationships mantained among inodes, blocks and even sectors; with its corresponding mapping and distributed pointes and links.
+A more "realistic view" is the intertwined relationships maintained among inodes, blocks and even sectors; with its corresponding mapping and distributed pointers and links.
 
 
 ### Different type of filesystems:
@@ -108,16 +108,16 @@ For each process in the system, the OS automatically opens the three standard fi
 
 
 ## File System Tables
-The OS system will mantain *in-memory structures* to manage and track open files.
+The OS system will maintain *in-memory structures* to manage and track open files.
 It does this by using a combination of of tables and cross-referencing processes, file descriptors and files (using inodes).
 
 Each time a file is opened, a new entry is added to these structures.
-The process involves finding the corresponding inode for the given file, check permissions from the metadata and initialize/poition the *cursor* at the beggining of the file.
+The process involves finding the corresponding inode for the given file, check permissions from the metadata and initialize/position the *cursor* at the beginning of the file.
 
-The in-memory structures mantained by the OS are:
+The in-memory structures maintained by the OS are:
    * **Process Control Block**
      
-        a table containinf the *File Descriptor Table* for each process where eery single file opened by the process has an entry
+        a table containing the *File Descriptor Table* for each process where every single file opened by the process has an entry
 
       |  FD |  filename  |
       |-----|------------|
@@ -144,7 +144,7 @@ The in-memory structures mantained by the OS are:
   
 * **Vnode Table**
   
-  The list of all inodes associted to the open files.
+  The list of all inodes associated to the open files.
   
      | Vnode Table   |
      |---------------|
@@ -182,7 +182,7 @@ A generic and typical "relational" representation would be,
 
 ### A Tale of Hierarchies
 IOPS are the most expensive operations of any program, hence one must deal with them with caution and in most the cases attempting to minimize them.
-The reason why that's the case is because the access to information storage in storage devices ia the slowest part in modern computers, even if one considers solid-state devices (SDDs) the typical time frame is going to be orders of magnitudes larger than the number of operations perform by the micro-processor.
+The reason why that's the case is because the access to information storage in storage devices is the slowest part in modern computers, even if one considers solid-state devices (SDDs) the typical time frame is going to be orders of magnitudes larger than the number of operations perform by the micro-processor.
 
 ```
   speed    #cycles                                           capacity
@@ -190,14 +190,14 @@ The reason why that's the case is because the access to information storage in s
     ^       o(10)                 cache                         |         | on-chip
     |       o(100)              main memory                     |        || in-board
     |       o(100)         Solid State Devices (SSD)            |       ||| 
-    |       o(1000)    Traditional Spining Devices (HDD)        |       ||| outboard
+    |       o(1000)    Traditional Spinning Devices (HDD)        |       ||| outboard
     |       o(10000)         Optical disks (CD)                 V      ||||
     |       o(100000)           Magnetic Tape                 large    |||| offline
-  slowest   o(1000000)       Network Communication                    ||||| offsite
+  slowest   o(1000000)       Network Communication                    ||||| off-site
 ```
 
 
-## Typical Linux FS Directory Structre
+## Typical Linux FS Directory Structure
 ```sh
 /
 ├── bin -> usr/bin
@@ -221,27 +221,27 @@ The reason why that's the case is because the access to information storage in s
 ```
 
 The listing above displays the typical directory structure in a Linux-type OS.
-As such these directory entries have some standariozed meaning and purpose, e.g.
-   - `/`: this is known as the "root" directory, o.e. the 'top'-level in the directory struture
+As such these directory entries have some standardized meaning and purpose, e.g.
+   - `/`: this is known as the "root" directory, o.e. the 'top'-level in the directory structure
    - `/bin`: stands for "binary", and it used to place basic programs and utilities, such as `ls` or `cp`, etc.
    - `/boot`: information about the booting of the system is placed here
    - `/dev`: file representation for devices are located in this directory
    - `/etc`: system-wide configuration files and databases are located here
    - `/home`: location for placing users' home directories
      - `/home/marcelo`
-   - `/lib`: contains shared libraries needed by programs in `/bin` or kernell modules
+   - `/lib`: contains shared libraries needed by programs in `/bin` or kernel modules
    - `/mnt`: place-holder directory used to "mount" other FS, i.e. a temporary mounting point
    - `/opt`: contains locally installed software
    - `/proc`: a virtual file system ("procfs") containing information about all the currently running processes 
    - `/root`: home directory of the system administrator: super-user (also known as "root", not to be confused with the root of the directory's tree)
-   - `/sbin`: super-user binarires (sbin)
+   - `/sbin`: super-user binaries (sbin)
    - `/srv`: server data, data for services provided by the system
    - `/sys`: another virtual FS ("sysfs") containing information about the hardware and OS
    - `/tmp`: temporary directory
    - `/usr`: "user" directory aimed to hold executables, libraries, and shared resources that are not system critical
      - `/usr/local`
      - `/usr/share`
-   - `/var`: a location to place varaible content, i.e. that might change frequently
+   - `/var`: a location to place variable content, i.e. that might change frequently
      - `/var/log`: system logs
      
 

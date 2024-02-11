@@ -2,7 +2,7 @@
 A shell is sometimes referred as a *meta-program* capable of running
 other programs.
 More importantly it sits directly as an interface between the user, APIs,
-etc. and the *kernell* of the OS.
+etc. and the *kernel* of the OS.
 
 The *shell* can be considered a special  type of program that allows the user to interact with certain aspects of the OS.
 In particular it allows us to manipulate and handle files in a very powerful and precise manner.
@@ -13,15 +13,15 @@ and  these are more modern ones: `zsh`, `fish`.
 
 There are common elements to any type of shell:
     the *prompt* is and indication that the shell is ready to receive instructions from the user;
-    the *cursor*, usually a square or rectangle shapped character, many times blinking, awaiting for the user's input
+    the *cursor*, usually a square or rectangle shaped character, many times blinking, awaiting for the user's input
 -- the combination of these elements are known as the command line interface.
 The most typical way to interact with the shell is via its **command line interface (CLI)**.
 The CLI allows users to input commands to perform very specific actions.
-The way in which these commands work is by peforming very well-defined, usually
+The way in which these commands work is by performing very well-defined, usually
 simple and narrow tasks.
 But one of the main advantages of the shell is that it allows us to combine
-multiple of these commands to perform more complicated or ellaborated tasks.
-The typical way to invoque these commands is using the command's name followed
+multiple of these commands to perform more complicated or elaborated tasks.
+The typical way to invoke these commands is using the command's name followed
 by arguments to this program, usually known as command line arguments (CLA)
 which are separated by "spaces".
 
@@ -29,7 +29,7 @@ which are separated by "spaces".
 ```sh
    CMD [arg1] [arg2] [...] arg_i arg_ii ...
 ```
-where `[]` represents *optional* arguments; i.e. argumwents which can or can not be present at the moment of executing the command.
+where `[]` represents *optional* arguments; i.e. arguments which can or can not be present at the moment of executing the command.
 
 For instance,
 ```sh
@@ -86,7 +86,7 @@ head    # print first lines of a file
 tail    # print last lines of a file
 
 # compare differences
-cmp    # compare bionary files
+cmp    # compare binary files
 diff    # compare text files
 vimdiff    # compare text files with vi-interface
 
@@ -150,20 +150,20 @@ STDERR   2
 ## Redirection and Piping
 One of the most powerful features of the shell is its ability to very easily combine the actions and results from multiple commands.
 It does this in two main ways:
-    - by *redirecting* the expected outpout from a command into a file, and then this file used as an intermediary for the input of a second command; or
+    - by *redirecting* the expected outpost from a command into a file, and then this file used as an intermediary for the input of a second command; or
     - by directly shipping the output from the command into a second command, or commonly known as *piping*
 
 A couple of comments/observations should be made here:
-    1) you may recall and have noticed that most if not all of thew shell commands appear top be very "simple" and do one thing mostly, this is not random but by design, in this way commands should fcous in doing a very precise, concrete, well-define action (do it right!) and then these "simple" commands can be combined to lead to a more complex action;
+    1) you may recall and have noticed that most if not all of the shell commands appear top be very "simple" and do one thing mostly, this is not random but by design, in this way commands should focus in doing a very precise, concrete, well-define action (do it right!) and then these "simple" commands can be combined to lead to a more complex action;
     2) again, everything is a file in Linux and files are manipulated so easily and powerfully at the level of the shell, that it couldn't be clearer the critical role they have in the OS abstraction;
-    3) having said that one must be careful when "hammering" file IOPs, shall we recall the IOPs herarchy and penalties we incurre by hiotting the FS to frequently -- for this very same reason, communicating directly between commands is much efficient and preferable whenever possible, i.e. piping!
+    3) having said that one must be careful when "hammering" file IOPs, shall we recall the IOPs hierarchy and penalties we incur by hitting the FS to frequently -- for this very same reason, communicating directly between commands is much efficient and preferable whenever possible, i.e. piping!
 
 |  Redirection/Pipe |    Action    |    Example    |
 |-----------------|-----------------------------------------|-------------------------|
-| `cmd > file`    |    redirect standar output to a file    |    `ls -l > listing`    |
-| `cmd >> file`   |    append standar output to a file      |    `ls -l >> listing`   |
-|  `cmd < file`   |    use file as input to cmd             |                         |
-| `cmd1 \| cmd2`  |    pipe (pass) standar output from cmd1 to cmd2    |    `ls -l | wc -l`    |
+| `cmd > file`    |    redirect standard output to a file   |    `ls -l > listing`    |
+| `cmd >> file`   |    append standard output to a file     |    `ls -l >> listing`   |
+| `cmd < file`    |    use file as input to cmd             |                         |
+| `cmd1 \| cmd2`  |    pipe (pass) standard output from cmd1 to cmd2    |    `ls -l | wc -l`    |
     
 
 ## Refs.

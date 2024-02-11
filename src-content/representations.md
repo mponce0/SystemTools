@@ -33,8 +33,8 @@ For instance, the character 'M' is assigned the value 77 (in decimal representat
 
 
 ## Representations
-A given numeical value can be represented differently given a different base to do so.
-This is the same concept as we have in Linear Algbera, where a vector representation change coefficients depending on the basis used to expand it.
+A given numerical value can be represented differently given a different base to do so.
+This is the same concept as we have in Linear Algebra, where a vector representation change coefficients depending on the basis used to expand it.
 Similarly if we have numerical value in one basis, its representation will change in a different one.
 
 For example, the number 77 in base-10 can be written as 01001101 in base-2.
@@ -61,7 +61,7 @@ In order to see how the binary representation "01001101" in base-2 corresponds t
 
 
 ## Representation Dependencies
-In general, is conicbable that after indicating the basis for the representation of a numerical value this would be uniquely determined.
+In general, is concibable that after indicating the basis for the representation of a numerical value this would be uniquely determined.
 This is mostly true in the case of computer representations, but taking into consideration the following:
 
   * how many bytes are used to represent a particular data type, e.g. an `int`-type can be represented using 4 or 8 bytes depending on
@@ -73,7 +73,7 @@ This is mostly true in the case of computer representations, but taking into con
 
  
   * the order in which we represent the data, i.e. whether we write first the least or most significant figure. This known as *endianness*.
-    It turns out that different machines and OSes at some point were using different convensions and this has percolated until nowadays,
+    It turns out that different machines and OSes at some point were using different conventions and this has percolated until nowadays,
     seeing the most typical difference when communicating information between machines where the network protocols use big-endian vs most of our modern computer systems that use little-endian.
  
 ---

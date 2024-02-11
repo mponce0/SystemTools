@@ -13,15 +13,15 @@ Examples: Python, C, C++, Java, Fortran, R, C#, etc.
 There are several ways in which programming languages are grouped or classified.
 
 For instance, they can be grouped by how "close" to the actual hardware and 
-   - high-level, is a programming level that offers a lot of abstractions and pre-defined functionalities when writting programs. Examples of this are: Python, R, ...
+   - high-level, is a programming level that offers a lot of abstractions and pre-defined functionalities when writing programs. Examples of this are: Python, R, ...
    - low-level, refers to a programming level that is very close (low) to the hardware details is. Examples of this are: C, Fortran, assembly.
 
 Another possible way to classify programming languages is based on how the *translation* from the source code into the machine code is done:
    - compiled,
       the program that has to be fully read by the compiler in order to be converted into binary code so that it can be executed in the computer.
-      in general, compiled langauages do not allwo for dynamic typing, i.e. for changing on the fly the type of variable, and in part because of this are better performing than interpreted ones.
+      in general, compiled languages do not allow for dynamic typing, i.e. for changing on the fly the type of variable, and in part because of this are better performing than interpreted ones.
    - interpreted,
-      the program is read line by line and execute by the interpreter. Because of this and other pecularities, such as garbage collection, dynamic typing, etc.; is that interpreted programming languages are substantially slower in terms of run-time performance.
+      the program is read line by line and execute by the interpreter. Because of this and other peculiarities, such as garbage collection, dynamic typing, etc.; is that interpreted programming languages are substantially slower in terms of run-time performance.
    
 
 ## Function
@@ -47,20 +47,20 @@ Term used to refer to a program when the programming language used is *compiled*
 General way, usually language agnostic, of describing a prescription, recipe or algorithm.
 
 ## Script
-used to specify the "source code", i.e. the implementation of the prrogram used in *interpreted*-type programming languages.
+used to specify the "source code", i.e. the implementation of the program used in *interpreted*-type programming languages.
 
 ## Monolithic Code
-it referers to the source code of a program which it has been written without any modular implementation, i.e. wihtout function definitions, proper code etiquete such indentation, etc.
+it refers to the source code of a program which it has been written without any modular implementation, i.e. without function definitions, proper code etiquette such indentation, etc.
 
 ## Spaghetti Code
-usually a variation on _Monolithic Code_ where not only the code etiquette is not present nbut also indentation is completelly aribitrary making it really hard to follow and read.
+usually a variation on _Monolithic Code_ where not only the code etiquette is not present but also indentation is completely arbitrary making it really hard to follow and read.
 
 ## Executable
 Is the program, machine code, that is being generated from a source code and can be run in the computer.
 It is composed by the translation of the source code into binary code.
 
 ## Compiler
-Program used to read and process the *source code* and generate an execurtable that can be run in the computer.
+Program used to read and process the *source code* and generate an executable that can be run in the computer.
 
    * standards
    specifying set of instructions and conventions at which a particular programming language would adhere.
@@ -68,26 +68,26 @@ Program used to read and process the *source code* and generate an execurtable t
 
 
 ## Interpreter
-Program used by *interpreted* programming lanuages to read and process line by line the instructions provided.
+Program used by *interpreted* programming languages to read and process line by line the instructions provided.
 
 
 ## Compilation
 Process of taking a source code and generate an executable or binary code, that can be run in the computer.
-Differently from an interpreter the compiler will read the whole source code, analyze it, check for different type of error, even improve it in some cases, and make sure evrything is proper place and form to generate a valid executable.
+Differently from an interpreter the compiler will read the whole source code, analyze it, check for different type of error, even improve it in some cases, and make sure everything is proper place and form to generate a valid executable.
    * Stages/Phases:
 
       In general, there are 3 main compilation stages:
 
-      - *pre-compilation*, where the compiler calls another program named *pre-compiler* to take care of pre-compile declarations, i.e. all instructions that being with "#", suhc as, macro definitions, include statements, etc.
+      - *pre-compilation*, where the compiler calls another program named *pre-compiler* to take care of pre-compile declarations, i.e. all instructions that being with "#", such as, macro definitions, include statements, etc.
       - *compilation*
       - *linking*
 
    * Compilation errors
       Produced by the compiler, these represent situations in which the compiler can not generate the corresponding binary code from a source code.
-      Causes for this vary, but could include syntaxtical mistakes, improver instructions implementation, types missmatches, etc.
+      Causes for this vary, but could include syntactical mistakes, improver instructions implementation, types mismatches, etc.
 
    * Warning Messages
-      These observations and concerns raised by the compiler. Warning won't stop the compiler from generating an executable but in general are a sympton of soemthing else that may not be working correctly or as we might expect to.
+      These observations and concerns raised by the compiler. Warning won't stop the compiler from generating an executable but in general are a symptom of something else that may not be working correctly or as we might expect to.
       In general the recommendation is to adjust the code until the compilation does not generate any warning messages or at least to understand why these are there.
       Recommended flags to use during compilation: ```-Wall``` and ```-Werror```.
 
@@ -99,11 +99,11 @@ Differently from an interpreter the compiler will read the whole source code, an
   ToBeCompleted
 
 ## Debugger
-Utility program used to trace and analyuze the live execution of a program.
+Utility program used to trace and analyze the live execution of a program.
 Used mostly to identify errors or problems with the implementation of a code.
 
 ## Library
-Collectiion of external resources that can be used in a program by including their decalations in our code.
+Collection of external resources that can be used in a program by including their declarations in our code.
 Eg. this is done using ```#include <...>``` in C, or ```import ...``` in Python.
 
 
@@ -131,7 +131,7 @@ Special type of variable that can only store two possible values (aka binary), u
 
 ## Operating System (OS)
    ToBeCompleted
-   - kernell
+   - kernel
 
 ## Terminal
    Application (program) that gives access to the shell of the operating system (OS).
@@ -143,16 +143,16 @@ Special type of variable that can only store two possible values (aka binary), u
    Information passed to functions or commands, they are used as input and modify or change the way in the command/function works, or as the target over which the command/function acts upon.
 
 ## Command Line Arguments (CLA)
-   Addittional parameters passed to commands run from the CLI.
+   Additional parameters passed to commands run from the CLI.
 
 ## Flags
-   Special type of CLA that can only take pre-defined values, usually preceeded by '-' or '--'
+   Special type of CLA that can only take pre-defined values, usually preceded by '-' or '--'
 
 ## TTY
    Terminal Typewriter, refers to a connection to a machine done by a "real" (physical) terminal, e.g. when a user connects to the machine through its console.
 
 ## PTS
-   Pseudo Terminal Session, refers to a remote connection done through a "virtual" (psuedo) terminal from a different location.
+   Pseudo Terminal Session, refers to a remote connection done through a "virtual" (pseudo) terminal from a different location.
    
 
 ## TUI

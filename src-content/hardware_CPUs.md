@@ -1,8 +1,8 @@
-# Brief and Quick Overview of Moderm Computers Architecture
+# Brief and Quick Overview of Modern Computers Architecture
 
 In this section, we present a brief overview of the main models used to understand and design modern computers, i.e. the **Turing machine** and **von Neumann architecture**.
 There are other ones, such as, the **Harvard architecture**; or even the paradigm shift presented by other devices as:
-*FPGA*, *post-Moore architectures*, *neuro-morphic chips*, *GPU*s and acceleratorrs up to certain point, or more dramatically *quantum devices*.
+*FPGA*, *post-Moore architectures*, *neuro-morphic chips*, *GPU*s and accelerators up to certain point, or more dramatically *quantum devices*.
 
 ## Turing machine
    Refers to a *mathematical model* of computation describing an abstract machine.
@@ -23,13 +23,13 @@ There are other ones, such as, the **Harvard architecture**; or even the paradig
   - Main Memory:
   	usually known as *RAM*, are larger spaces of volatile memory which can be expanded by adding new hardware.
 
-  - Peripherials:
+  - Peripherals:
 	  - I/O devices: keyboard, screen, HDD, SDD
 
 
 ## Modern Architectures
 In addition to the elements denoted by von Neumann architecture, 
-   - _cache_, aka "cache memory" or "cache lines" are an intermediate memory space between main RAM registers on the microprocessor. There are 3 levels of cache, referred as L1, L2 and L3, increasing in size and decrasing in speed of access to the data storage on them respectively.
+   - _cache_, aka "cache memory" or "cache lines" are an intermediate memory space between main RAM registers on the microprocessor. There are 3 levels of cache, referred as L1, L2 and L3, increasing in size and decreasing in speed of access to the data storage on them respectively.
    - _core_, another term for CPU, multi-core architectures consist of multiple cores or CPUs
    - _die_,
    - _microprocessor_, integrated circuit containing multiple components, eg. chip with CPU+cache+...
@@ -38,7 +38,7 @@ In addition to the elements denoted by von Neumann architecture,
 
 ```
 										--[motherboard schematics]--
-	microproccessor				clock
+	microprocessor				clock
 +---------------------------------------+	+------+
 |	 +~~~~~~~~~~~~~~~~~~~~~~~~+	|	| X GHz|     __    __    __
 |	:|  (RX)(RX). . .(RX)(RX) |:	|	+------+  __/: \__/: \__/  \_...
