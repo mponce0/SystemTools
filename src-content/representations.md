@@ -92,7 +92,7 @@ e.g.
 
 ```
 
-If we also consider the order in which we want to represent this "digits", then we can see that,
+If we also consider the order in which we want to represent the "digits" for this one byte, then we can see that,
 ```
 * little-endian:  10 (base-10) ~ ~ 01010000 (base-2) ~ 0A (base-16)
 
