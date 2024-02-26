@@ -32,11 +32,13 @@ In order for the OS to manage files, it employs two critical elements:
 
 ```
    Operating System           ||      STORAGE DEVICE
+                              |         (hardware)
                   (( F i l e    S y s t e m ))
-      - inodes
+      - inodes                |
          / | \            [firmware]
         |  |  |           [drivers/controllers]
-        v..v..v
+        |..|..|               |
+        v  v  v               |
       - blocks   ---  ---  ---  --- ---> sectors
 
 ```
