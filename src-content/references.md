@@ -17,8 +17,8 @@
       valgrind https://valgrind.org/
 
 ### Debuggers
-    - GDB to LLDB command map
-    	https://lldb.llvm.org/use/map.html
+   - GDB to LLDB command map
+      https://lldb.llvm.org/use/map.html
 
 
 ## Misc.
