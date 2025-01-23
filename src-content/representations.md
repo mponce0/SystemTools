@@ -32,6 +32,7 @@ For instance,
 For instance, the character 'M' is assigned the value 77 (in decimal representation, i.e. using base 10).
 
 
+
 ## Representations
 A given numerical value can be represented differently given a different base to do so.
 This is the same concept as we have in Linear Algebra, where a vector representation change coefficients depending on the basis used to expand it.
@@ -98,4 +99,42 @@ If we also consider the order in which we want to represent the "digits" for thi
 
 * big-endian: ~ 01 (base-10) ~ 00001010 (base-2) ~ A0 (base-16)
 ```
+---
+
+A more "complete" ASCII table is shown below, where in addittion to the decimal and corresponding
+character, is included the respective octal (base-8) and hexadecimal (base-16) values
+
+```sh
+ASCII Table:
+------------
+Char | Dec | Hex | Oct          Char | Dec | Hex | Oct          Char | Dec | Hex | Oct          Char | Dec | Hex | Oct
+-----|-----|-----|-----         -----|-----|-----|-----         -----|-----|-----|-----         -----|-----|-----|-----
+  !  |  33 |  21 |  41            "  |  34 |  22 |  42            #  |  35 |  23 |  43            $  |  36 |  24 |  44
+  %  |  37 |  25 |  45            &  |  38 |  26 |  46            '  |  39 |  27 |  47            (  |  40 |  28 |  50
+  )  |  41 |  29 |  51            *  |  42 |  2A |  52            +  |  43 |  2B |  53            ,  |  44 |  2C |  54
+  -  |  45 |  2D |  55            .  |  46 |  2E |  56            /  |  47 |  2F |  57            0  |  48 |  30 |  60
+  1  |  49 |  31 |  61            2  |  50 |  32 |  62            3  |  51 |  33 |  63            4  |  52 |  34 |  64
+  5  |  53 |  35 |  65            6  |  54 |  36 |  66            7  |  55 |  37 |  67            8  |  56 |  38 |  70
+  9  |  57 |  39 |  71            :  |  58 |  3A |  72            ;  |  59 |  3B |  73            <  |  60 |  3C |  74
+  =  |  61 |  3D |  75            >  |  62 |  3E |  76            ?  |  63 |  3F |  77            @  |  64 |  40 | 100
+  A  |  65 |  41 | 101            B  |  66 |  42 | 102            C  |  67 |  43 | 103            D  |  68 |  44 | 104
+  E  |  69 |  45 | 105            F  |  70 |  46 | 106            G  |  71 |  47 | 107            H  |  72 |  48 | 110
+  I  |  73 |  49 | 111            J  |  74 |  4A | 112            K  |  75 |  4B | 113            L  |  76 |  4C | 114
+  M  |  77 |  4D | 115            N  |  78 |  4E | 116            O  |  79 |  4F | 117            P  |  80 |  50 | 120
+  Q  |  81 |  51 | 121            R  |  82 |  52 | 122            S  |  83 |  53 | 123            T  |  84 |  54 | 124
+  U  |  85 |  55 | 125            V  |  86 |  56 | 126            W  |  87 |  57 | 127            X  |  88 |  58 | 130
+  Y  |  89 |  59 | 131            Z  |  90 |  5A | 132            [  |  91 |  5B | 133            \  |  92 |  5C | 134
+  ]  |  93 |  5D | 135            ^  |  94 |  5E | 136            _  |  95 |  5F | 137            `  |  96 |  60 | 140
+  a  |  97 |  61 | 141            b  |  98 |  62 | 142            c  |  99 |  63 | 143            d  | 100 |  64 | 144
+  e  | 101 |  65 | 145            f  | 102 |  66 | 146            g  | 103 |  67 | 147            h  | 104 |  68 | 150
+  i  | 105 |  69 | 151            j  | 106 |  6A | 152            k  | 107 |  6B | 153            l  | 108 |  6C | 154
+  m  | 109 |  6D | 155            n  | 110 |  6E | 156            o  | 111 |  6F | 157            p  | 112 |  70 | 160
+  q  | 113 |  71 | 161            r  | 114 |  72 | 162            s  | 115 |  73 | 163            t  | 116 |  74 | 164
+  u  | 117 |  75 | 165            v  | 118 |  76 | 166            w  | 119 |  77 | 167            x  | 120 |  78 | 170
+  y  | 121 |  79 | 171            z  | 122 |  7A | 172            {  | 123 |  7B | 173            |  | 124 |  7C | 174
+  }  | 125 |  7D | 175            ~  | 126 |  7E | 176
+```
+
+Exercise: write a C program that would genereate exactly this output.
+
 ---
