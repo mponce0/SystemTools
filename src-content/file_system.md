@@ -61,6 +61,27 @@ Moreover is possible that a computer system and its corresponding OS, operate on
 
 ```
 
+An example of this are the computer labs accessible for our courses (e.g. IA-3170).
+These computer labs usually have mutliple devices available for users to connect and work.
+Independently of which machine the user is connecting to, it will always see the same files and file-space --
+this is because the very same FS is being **mounted** by all the different machines hence the user
+always sees the same file-space in any of these machines.
+
+```
+    IA3170-01       IA3170-02       .....       IA3170-39   IA3170-40
+    +-------+       +-------+                   +-------+   +-------+
+    |       |       |       |                   |       |   |       |
+    +-------+       +-------+                   +-------+   +-------+
+        \               \                           /           /
+         \               \                         /           /
+          \...............\.........\     /......./.........../ 
+                                    -------
+                                   /       \
+                                  |  N F S  |
+                                   \_______/
+
+```
+
 Importantly, the "view" that the OS And FS have of the files and their associated data is quite different from the one that users or even programs and applications perceive.
 From an user perspective, the files, directories, etc. appear as a well organized, hierarchically structured formation -- see the "Typical Linux FS Directory Structure".
 However, this is another of the "nice" abstractions and simplified view that the OS in combination with the FS present to users and applications.
@@ -78,8 +99,10 @@ The following is an incomplete, but still interesting and representative, list o
    - APFS: The proprietary Apple file system developed as a replacement for HFS+, with a focus on flash drives, SSDs, and encryption.
    - ext2, ext3, & ext4: The extended file system (ext) was the first file system created specifically for the Linux kernel.
 
-   - GPFS: a General Parallel File System, proprietary FS developed by IBM for HPC or cluster-type systems.
    - NAS: Network Attached Storage, involves a server connected to a network providing access to storage resources.
+
+   - GPFS: a General Parallel File System, proprietary FS developed by IBM for HPC or cluster-type systems.
+   - Luster: an open-source high-performance parallel FS, developed and mantained by the National Labs in the US
 
 
 ## File Interfaces in C/Unix
