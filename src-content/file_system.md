@@ -82,7 +82,52 @@ always sees the same file-space in any of these machines.
 
 ```
 
-Importantly, the "view" that the OS And FS have of the files and their associated data is quite different from the one that users or even programs and applications perceive.
+It is possible to investigate the type of FS *mounted* by the OS using a some of commands available in the shell:
+e.g.
+`mount`, `df`, ...
+
+```sh
+[Wed Jan 22 23:19:17 marcelo @it-ia3170-11:~ ] $ df
+Filesystem                                                    1K-blocks     Used Available Use% Mounted on
+tmpfs                                                           1605480     2416   1603064   1% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv                             487983192 55011240 408110256  12% /
+tmpfs                                                           8027384        0   8027384   0% /dev/shm
+tmpfs                                                              5120       12      5108   1% /run/lock
+efivarfs                                                            438      195       239  45% /sys/firmware/efi/efivars
+tmpfs                                                           8027384      220   8027164   1% /run/qemu
+/dev/nvme0n1p2                                                  1992552   423364   1447948  23% /boot
+/dev/nvme0n1p1                                                  1098632    28460   1070172   3% /boot/efi
+servare-nfs.storage.utsc.utoronto.ca:/ifs/nfs3/cms/courses     20971520        0  20971520   0% /courses
+servare-nfs.storage.utsc.utoronto.ca:/ifs/nfs3/cms/cmsfaculty 104857600 89221120  15636480  86% /cmsfaculty
+servare-nfs.storage.utsc.utoronto.ca:/ifs/nfs3/cms/cmshome     10485760        0  10485760   0% /cmshome
+tmpfs                                                           1605476      144   1605332   1% /run/user/120
+tmpfs                                                           1605476      132   1605344   1% /run/user/17524891
+
+[Wed Jan 22 23:19:27 marcelo @it-ia3170-11:~ ] $ df -i
+Filesystem                                                       Inodes   IUsed     IFree IUse% Mounted on
+tmpfs                                                           2006846    1525   2005321    1% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv                              31064064 1316836  29747228    5% /
+tmpfs                                                           2006846       1   2006845    1% /dev/shm
+tmpfs                                                           2006846       8   2006838    1% /run/lock
+efivarfs                                                              0       0         0     - /sys/firmware/efi/efivars
+tmpfs                                                           2006846       8   2006838    1% /run/qemu
+/dev/nvme0n1p2                                                   131072     327    130745    1% /boot
+/dev/nvme0n1p1                                                        0       0         0     - /boot/efi
+servare-nfs.storage.utsc.utoronto.ca:/ifs/nfs3/cms/courses     41943040       6  41943034    1% /courses
+servare-nfs.storage.utsc.utoronto.ca:/ifs/nfs3/cms/cmsfaculty 209715200  120574 209594626    1% /cmsfaculty
+servare-nfs.storage.utsc.utoronto.ca:/ifs/nfs3/cms/cmshome     20971520       1  20971519    1% /cmshome
+tmpfs                                                            401369     120    401249    1% /run/user/120
+tmpfs                                                            401369     110    401259    1% /run/user/17524891
+
+```
+In the above output the command `df` is being used to show the different FSs available on machines from a computer lab.
+Notice that the command is run twice: once showing the information in terms of blocks and a second time (using the `-i` flag) in terms of inodes.
+In both cases the information abouce *available* blocks and inodes is provided.
+
+One should recall how critical this information can be, in particular as if the OS runs out of *inodes* no further files could be created in the system, even when there may still be physical space available on the device.
+
+
+Remarkably, the "view" that the OS And FS have of the files and their associated data is quite different from the one that users or even programs and applications perceive.
 From an user perspective, the files, directories, etc. appear as a well organized, hierarchically structured formation -- see the "Typical Linux FS Directory Structure".
 However, this is another of the "nice" abstractions and simplified view that the OS in combination with the FS present to users and applications.
 
