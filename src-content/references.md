@@ -1,5 +1,8 @@
 # References & Resources
 
+## C Programming
+    https://en.cppreference.com/w/c
+
 ## Linux
    - https://linuxcommand.org/
 
