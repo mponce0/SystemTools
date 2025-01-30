@@ -58,5 +58,18 @@ size_t fwrite(const void *ptr, size_t size, FILE *stream);
 Any IOP is always going to be the slowest part of any code.
 The reason of why this is the case is simple: IOPs mostly involve interactions with hardware which in its main form is constituted by mechanical parts, e.g. HDD.
 Hence any mechanical interaction is always going to be substantially slower than any electronic interactions.
-In addition to that, there is the fact that if we are "forcing" a type conversion, e.g. if we are trying to save data (which is usually stored as binary) in memory as "text/ASCII" represented data, then there is a explicit conversion that must be done, involving further cycles of the CPU fully dedicate to these conversions.
 
+In addition to that, there is the fact that if we are "forcing" a type conversion, e.g. if we are trying to save data (which is usually stored as binary) in memory as "text/ASCII" represented data, then there is a explicit conversion that must be done, involving further cycles of the CPU fully dedicate to these conversions.
+Moreover, in some cases --for instance if the data is stored in floating point variables-- there may be a precision loss in this conversion.
+
+Additionally, it is also the case that saving the data in plain ASCII/text will use much more space (in terms of file size) than in binary.
+For example, the binary representation of integers is 4 bytes (assuming 32-bit architecture).
+Because the number of characters in text representation is equal to the number of decimal digits (e.g. integers 100, 234 or 999 all of them would use 3 characters), then when a numerical value has more than 4 digits, i.e. 4 characters (each character needs 1 byte), then a character representation will require more bytes than a numerical value store as an int.
+
+> *Exercise:*
+     Identify the range of integers `i` such that:
+  1. more bytes are required to store `i` in binary –-e.g. using `fwrite(&i, sizeof(int), 1, fp)`–- than in text –e.g. using `fprintf(fp, "%d", i)`–-
+  2. the same number of bytes are required to store `i` in binary and in text.
+  3. fewer bytes are required to store `i` in binary than in text.
+
+---
