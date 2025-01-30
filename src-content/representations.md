@@ -42,10 +42,11 @@ For example, the number 77 in base-10 can be written as 01001101 in base-2.
 
 As a general observation, a numerical representation in base-X, will have `0,...,X-1` possible digits.
 E.g.
-  - base-10: `0,1,2,3,4,5,6,7,8,9`
-  - base-2: `0,1`
-  - base-7: `0,1,2,3,4,5,6`
-  - base-16: `0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F` (here `A`->10, `B`->11, `C`->12, `D`->13, `E`->14, and `F`->15).
+  - base-10 (decimal): `0,1,2,3,4,5,6,7,8,9`
+  - base-2 (binary): `0,1`
+  - base-7 (septenary): `0,1,2,3,4,5,6`
+  - base-8 (octal): `0,1,2,3,4,5,6,7`
+  - base-16 (hexadecimal): `0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F` (here `A`->10, `B`->11, `C`->12, `D`->13, `E`->14, and `F`->15).
 
 
 In order to see how the binary representation "01001101" in base-2 corresponds to 77 in base-10, we can notice the following,
@@ -58,7 +59,24 @@ In order to see how the binary representation "01001101" in base-2 corresponds t
 ==> (0*128) + (1*64) + (0*32) + (0*16) + (1*8) + (1*4) + (0*2) + (1*1) = 64+8+4+1 = 77
 ```
 
-> *Exercise:* write a program to convert representations between two given numerical bases.
+> *Exercise:*
+    write a program to convert representations between two given numerical bases.
+
+
+> *Exercise:*
+    Assuming a 32-bits architecture, show why `int`s in C can taken values between
+
+```C
+    INT_MIN        = -2147483648
+    INT_MAX        = +2147483647
+```
+and
+
+```C
+    UINT_MAX       = 4294967295
+```
+
+in the case of unsigned ints.
 
 
 ## Representation Dependencies
@@ -135,6 +153,7 @@ Char | Dec | Hex | Oct          Char | Dec | Hex | Oct          Char | Dec | Hex
   }  | 125 |  7D | 175            ~  | 126 |  7E | 176
 ```
 
-Exercise: write a C program that would genereate exactly this output.
+> *Exercise:*
+    write a C program that would genereate an output exactly like the table shown above.
 
 ---
