@@ -20,14 +20,17 @@
 * Optimization Flags:
     - `-O0`, `-O1`, `-O2`, `-O3`
     - `-Ofast`, `-march=<ARCH>`
+    - `-Os`, `-Oz`, `-Og`
   
 * Compilation:
-    - `-E` pre-process only; do not compile, assemble or link.
-    - `-S` compile only; do not assemble or link.
-    - `-c` compile and assemble, but do not link.
+    - `-E` *pre-process* only; do not compile, assemble or link.
+    - `-S` *compile* only; do not assemble or link.
+    - `-c` *compile and assemble*, but do not link.
     - `-o <execName>` name output file
       
-* Warnings:  `-Wall`, `-Werror`
+* Warnings:
+    `-Wall`, `-Werror`
+    `-pedantic`, `-Wpedantic`
 * Debugging: `-g`
 * Profiling/instrumentation: `-pg`
 * Libraries: `-I`,`-L`,`-l`
@@ -36,7 +39,6 @@
     - `--std=<std_ver>`  
     - `-v`  display built-in specs.
     - `--version`  display compiler version
-
 
 * Example
   ```sh
@@ -47,3 +49,30 @@
     # generating an executable named "myExec": -o myExec
     gcc --std=c99 -Wall -Werror -O2 myProg.c  -lm  -o myExec
   ```
+
+---
+
+## Library Dependencies
+
+  * "System" Libraries:
+    - from the compiler
+        - e.g. `stdio.h, string.h, ...`
+        - include them in source code using: `#include <...>`
+
+    - from the OS
+        - e.g. `glib.c, ...`
+        - include them in source code using: `#include "..."`
+        - may require adding linking flags: `-l lib_name`
+
+
+  * External Libraries:
+    - need to be installed in the system, 
+        e.g. `/usr/local/lib` and `/usr/local/include`
+    - include them in source code:
+        `#include <...>`
+    - add compilation flags:
+        `-I/usr/local/include`
+    - add linking flags:
+        `-L/usr/local/xxx/lib/` and `-l lib_name`
+
+---
