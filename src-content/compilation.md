@@ -75,4 +75,10 @@
     - add linking flags:
         `-L/usr/local/xxx/lib/` and `-l lib_name`
 
+
+## Useful commands and things to know...
+   - `ldd` 
+
+   - environment variables:
+        `LD_LIBRARY_PATH`, `CPATH`, ...
 ---
