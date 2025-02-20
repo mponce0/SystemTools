@@ -5,6 +5,7 @@
 
 ## Linux
    - https://linuxcommand.org/
+   - https://docs.kernel.org/
 
 ## Terminal Multiplexers
    - https://github.com/tmux/tmux/wiki/Getting-Started
