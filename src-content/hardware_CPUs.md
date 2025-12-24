@@ -71,3 +71,11 @@ In addition to the elements denoted by von Neumann architecture,
 	||			||
 	+=======================+
 ```
+
+
+## Further Readings
+  * What every programmer should know about memory. Ulrich Drepper, 2007.
+    - https://lwn.net/Articles/250967/
+    - https://www.akkadia.org/drepper/cpumemory.pdf
+
+---

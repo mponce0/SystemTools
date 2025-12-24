@@ -318,3 +318,6 @@ As such these directory entries have some standardized meaning and purpose, e.g.
 ## References
    - Interesting reading:
        "Anatomy of the Linux file system", https://developer.ibm.com/tutorials/l-linux-filesystem/
+   - "The `/proc` filesystem":
+        https://docs.kernel.org/filesystems/proc.html
+

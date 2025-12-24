@@ -24,4 +24,5 @@ In general, a computer system process consists of:
 
 ## Useful commands/tools to monitor processes
 
-    top, ps, htop, atop, btop, ctop
+    top, htop, atop, btop, ctop
+    ps, pstree

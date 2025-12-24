@@ -1,11 +1,14 @@
 # References & Resources
 
 ## C Programming
-    https://en.cppreference.com/w/c
+   - https://en.cppreference.com/w/c
 
 ## Linux
    - https://linuxcommand.org/
    - https://docs.kernel.org/
+   - https://www.kernel.org/doc/man-pages/
+   - https://man7.org/tlpi/index.html
+
 
 ## Terminal Multiplexers
    - https://github.com/tmux/tmux/wiki/Getting-Started
@@ -23,6 +26,8 @@
 ### Debuggers
    - GDB to LLDB command map
       https://lldb.llvm.org/use/map.html
+   - Valgrind
+      https://valgrind.org/
 
 
 ## Misc.
