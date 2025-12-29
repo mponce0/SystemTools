@@ -151,8 +151,11 @@ Special type of variable that can only store two possible values (aka binary), u
 ## TTY
    Terminal Typewriter, refers to a connection to a machine done by a "real" (physical) terminal, e.g. when a user connects to the machine through its console.
 
+## PTY
+   Pseudo-Terminal, virtual connection done through a "virtual" (pseudo) terminal.
+
 ## PTS
-   Pseudo Terminal Session, refers to a remote connection done through a "virtual" (pseudo) terminal from a different location.
+   Pseudo Terminal Session, refers to the end-point a remote connection done through a "virtual" (pseudo) terminal from a different location.
    
 
 ## TUI

@@ -164,7 +164,23 @@ A couple of comments/observations should be made here:
 | `cmd >> file`   |    append standard output to a file     |    `ls -l >> listing`   |
 | `cmd < file`    |    use file as input to cmd             |                         |
 | `cmd1 \| cmd2`  |    pipe (pass) standard output from cmd1 to cmd2    |    `ls -l | wc -l`    |
-    
+
+
+### Special Redirections
+As discussed before, standard output (stdout) and standard error (stderr) are de-facto
+file descriptors created and orchestrated by the OS for any running process.
+These can be also handle programmatically or from the shell.
+
+ * For redirectiong standard error to standard output, use:
+    `2>&1`
+
+ * For redirecting both standard output and standard error to a file, use:
+    `&>`
+
+ * Example:
+    `cmd &> filename`  --or-- `cmd > filename 2>&1`
+
+
 
 ## Refs.
    * https://www.kernel.org/doc/man-pages/
