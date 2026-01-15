@@ -4,7 +4,7 @@
 | `ps`/`pstree` | process manager | `ps aux` |
 | `uname`   |   system information  |   `uname -a`  |
 | `netstat` | network analyzer  |
-| `lsof`  | ... |
+| `lsof`  | list file descriptors of open files |
 | `tmux` / `screen` | terminal multiplexer |
 | `tree` | display file tree structure | `tree --inodes` |
 | `stat` | display file status | 

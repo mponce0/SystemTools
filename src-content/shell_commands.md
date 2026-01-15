@@ -85,6 +85,9 @@ less    # scroll through file
 head    # print first lines of a file
 tail    # print last lines of a file
 
+# search within files
+grep    # search for text within a file
+
 # compare differences
 cmp    # compare binary files
 diff    # compare text files
