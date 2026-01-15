@@ -86,3 +86,16 @@ A typical way to differentiate Linux OS "flavors" is by composing different 'dis
 Linux OS is so modular and flexible, that one can create its very own personalized and customized "flavor" of Linux by combining different elements of the OS.
 The main elements needed are:  the Linux kernel, shell utilities, a desktop environment, a package manager, etc.
 
+There are multiple very well-known and popular distributions already available that one can use.
+Among the most typical ones, you can find:
+
+
+| Distro    |   Feature      |
+|-----------|----------------|
+| Ubuntu    | very popular and easy to install and use  |
+| Debian    | a robust, more low-level version, with many years of legacy   |
+| Kali     | specialized and loaded with cybersec tools    |
+| CentOS    | typical Linux deployed in many academic institutions and clusters |
+| Garuda    | a very aestheticaly driven arch64 distro  |
+
+
