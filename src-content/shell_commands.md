@@ -153,7 +153,7 @@ STDERR   2
 ## Redirection and Piping
 One of the most powerful features of the shell is its ability to very easily combine the actions and results from multiple commands.
 It does this in two main ways:
-    - by *redirecting* the expected outpost from a command into a file, and then this file used as an intermediary for the input of a second command; or
+    - by *redirecting* the expected output from a command into a file, and then this file used as an intermediary for the input of a second command; or
     - by directly shipping the output from the command into a second command, or commonly known as *piping*
 
 A couple of comments/observations should be made here:
