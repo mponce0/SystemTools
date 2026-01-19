@@ -157,3 +157,15 @@ Char | Dec | Hex | Oct          Char | Dec | Hex | Oct          Char | Dec | Hex
     write a C program that would genereate an output exactly like the table shown above.
 
 ---
+
+### Example: long/unsigned ints
+
+long is a integer type but "larger", i.e. it has more bytes assigned to be able to represent larger numbers.
+Typically (this depends on the actual architecture), an int uses 4 bytes, and a long uses 8 bytes... which means that a int would cover a range of 2^(4*8) =2 ^32 possible values, if you consider positive and negative values, then it will be 2^32/2 - 1.
+Same thing applies for long ints... now you may notice the "unsigned" type, and in this case the whole range of values can be used to represent just "positive" numbers, i.e. 2^32 (-1) for a typical unsigned int.
+
+> *Exercise:*
+    write a C program that finds how many bytes each major representation uses in the machine where it's been run:
+        int, long, unsigned, float, double, ...
+
+---
