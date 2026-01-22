@@ -27,7 +27,7 @@ which are separated by "spaces".
 
 ### Generic Way to Execute Commands in the shell
 ```sh
-   CMD [arg1] [arg2] [...] arg_i arg_ii ...
+   CMD [arg1] [arg2] [...[...]] arg_i arg_ii ...
 ```
 where `[]` represents *optional* arguments; i.e. arguments which can or can not be present at the moment of executing the command.
 
