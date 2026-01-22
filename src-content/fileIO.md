@@ -73,3 +73,34 @@ Because the number of characters in text representation is equal to the number o
   3. fewer bytes are required to store `i` in binary than in text.
 
 ---
+
+## Final considerations
+
+* I/O
+    - a major ``bottle neck''
+
+    - a necessary evil
+
+    - minimize IOPS:
+        - B09 students know THIS!
+
+        - even IT corporations bussinesses know this.
+
+        - it is in *nix's DNA: everything is a file!
+
+        - almost at the bottom of the comm. hierarchy:
+
+ 
+ ```
+                            /\
+                           /  \
+                          /....\
+                         /      \
+                        /--------\
+                       / IO->FS...\
+                      /------------\
+                     / Network comm.\
+                    /________________\
+```
+
+---
