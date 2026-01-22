@@ -164,6 +164,11 @@ Special type of variable that can only store two possible values (aka binary), u
 ## GUI
    Graphics User Interface, i.e. a user interface based on graphical interactions.
 
+
+## EOF
+   End of File, special indicator to denote the end of file/data/communication.
+
+
 ---
 
 ver 0.1 -- Last modified: Jan. 2024
