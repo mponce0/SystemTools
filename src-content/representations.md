@@ -168,4 +168,6 @@ Same thing applies for long ints... now you may notice the "unsigned" type, and 
     write a C program that finds how many bytes each major representation uses in the machine where it's been run:
         int, long, unsigned, float, double, ...
 
+  Hint: check the use of the `sizeof()` function; also there is an interesting library `limits.h`.
+
 ---
