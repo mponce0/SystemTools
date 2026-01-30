@@ -103,4 +103,8 @@ Because the number of characters in text representation is equal to the number o
                     /________________\
 ```
 
+* cache
+
+* buffer
+
 ---
